@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saif Shaikh — Supply Chain Analytics Portfolio</title>
+  <meta name="description" content="Business Analyst portfolio showcasing supply chain data analysis, inventory optimization, and vendor performance work by Saif Shaikh." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <style>
+    :root {
+      --bg: #faf8f3;
+      --bg-dark: #1a1a1a;
+      --ink: #1a1a1a;
+      --ink-soft: #3d3d3d;
+      --ink-faint: #6b6b6b;
+      --accent: #b84520;
+      --accent-soft: #e8c4b4;
+      --line: #dcd4c4;
+      --highlight: #fff3d6;
+      --success: #3d6a4a;
+      --warning: #a87d10;
+      --danger: #b84520;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    /* Grain texture */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.5'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      pointer-events: none;
+      z-index: 1;
+      mix-blend-mode: multiply;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    section {
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(250, 248, 243, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+      z-index: 100;
+      padding: 1rem 0;
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+    .logo-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin-right: 0.4rem;
+      vertical-align: middle;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav a {
+      color: var(--ink-soft);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* HERO */
+    .hero {
+      padding: 6rem 0 8rem;
+      position: relative;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+    .hero h1 em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--accent);
+    }
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--ink-soft);
+      max-width: 540px;
+      margin-bottom: 2.5rem;
+      line-height: 1.5;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.9rem 1.5rem;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+      border-radius: 2px;
+    }
+    .btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--ink);
+    }
+    .btn-outline:hover {
+      background: var(--ink);
+      color: var(--bg);
+      transform: translateY(-2px);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      box-shadow: 8px 8px 0 var(--ink);
+      position: relative;
+    }
+    .hero-stat {
+      position: relative;
+    }
+    .hero-stat-value {
+      font-family: 'Fraunces', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1;
+      color: var(--ink);
+      margin-bottom: 0.3rem;
+    }
+    .hero-stat-value .unit {
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+    .hero-stat-label {
+      font-size: 0.8rem;
+      color: var(--ink-faint);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+
+    /* SECTION HEADER */
+    .section-eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .section-eyebrow::before {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: var(--accent);
+    }
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+      max-width: 800px;
+    }
+    .section-title em {
+      font-style: italic;
+      color: var(--accent);
+      font-weight: 300;
+    }
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--ink-soft);
+      max-width: 700px;
+      margin-bottom: 3rem;
+    }
+
+    /* PROJECT OVERVIEW */
+    .overview {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 5rem 0;
+    }
+    .overview .section-eyebrow {
+      color: var(--accent-soft);
+    }
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+    .overview-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent-soft);
+    }
+    .overview-card p {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .overview-card .num {
+      font-family: 'Fraunces', serif;
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    /* DASHBOARD */
+    .dashboard {
+      padding: 5rem 0;
+    }
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .kpi-card {
+      background: white;
+      border: 1px solid var(--line);
+      padding: 1.75rem;
+      border-radius: 4px;
+      position: relative;
+      transition: transform 0.2s;
+    }
+    .kpi-card:hover {
+      transform: translateY(-3px);
+    }
+    .kpi-card.alert {
+      border-left: 3px solid var(--danger);
+    }
+    .kpi-card.warning {
+      border-left: 3px solid var(--warning);
+    }
+    .kpi-card.success {
+      border-left: 3px solid var(--success);
+    }
+    .kpi-card.neutral {
+      border-left: 3px solid var(--ink);
+    }
+    .kpi-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-soft);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .kpi-value {
+      font-family: 'Fraunces', serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    .kpi-sub {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+
+    /* CHART GRID */
+    .chart-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .chart-grid.full {
+      grid-template-columns: 1fr;
+    }
+    .chart-card {
+      background: white;
+      border: 1px solid var(--line);
+      padding: 2rem;
+      border-radius: 4px;
+    }
+    .chart-header {
+      margin-bottom: 1.5rem;
+    }
+    .chart-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    .chart-subtitle {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+    }
+    .chart-canvas-wrap {
+      position: relative;
+      height: 320px;
+    }
+    .chart-insight {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: var(--highlight);
+      border-left: 3px solid var(--accent);
+      font-size: 0.9rem;
+      color: var(--ink);
+    }
+    .chart-insight strong {
+      color: var(--accent);
+    }
+
+    /* FINDINGS */
+    .findings {
+      padding: 5rem 0;
+      background: white;
+    }
+    .findings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .finding-card {
+      padding: 2rem;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      position: relative;
+      background: var(--bg);
+      transition: all 0.2s;
+    }
+    .finding-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 6px 6px 0 var(--ink);
+    }
+    .finding-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .finding-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+    .finding-card p {
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .finding-impact {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 600;
+      padding-top: 1rem;
+      border-top: 1px dashed var(--line);
+    }
+
+    /* METHODOLOGY */
+    .methodology {
+      padding: 5rem 0;
+    }
+    .method-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .method-step {
+      position: relative;
+    }
+    .method-step-num {
+      font-family: 'Fraunces', serif;
+      font-size: 4rem;
+      font-weight: 300;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .method-step h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .method-step p {
+      color: var(--ink-soft);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .method-step .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.6rem;
+      background: var(--ink);
+      color: var(--bg);
+      border-radius: 2px;
+    }
+
+    /* IMPACT */
+    .impact {
+      padding: 5rem 0;
+      background: var(--ink);
+      color: var(--bg);
+    }
+    .impact .section-eyebrow {
+      color: var(--accent-soft);
+    }
+    .impact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-top: 3rem;
+      align-items: center;
+    }
+    .impact-list {
+      list-style: none;
+    }
+    .impact-list li {
+      padding: 1.25rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .impact-list li:last-child {
+      border-bottom: none;
+    }
+    .impact-list li strong {
+      font-family: 'Fraunces', serif;
+      font-size: 1.5rem;
+      color: var(--accent);
+      min-width: 100px;
+      font-weight: 500;
+    }
+    .impact-list li p {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    /* APPENDIX */
+    .appendix {
+      padding: 5rem 0;
+      background: var(--bg);
+    }
+    .appendix-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .appendix-card {
+      background: white;
+      border: 1px solid var(--line);
+      padding: 2rem;
+      border-radius: 4px;
+      transition: transform 0.2s;
+    }
+    .appendix-card:hover {
+      transform: translateY(-3px);
+    }
+    .appendix-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .appendix-card h4 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    .appendix-card p {
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+      line-height: 1.6;
+    }
+    .code-block {
+      background: var(--ink);
+      color: #f5f1e8;
+      padding: 1.25rem;
+      border-radius: 4px;
+      overflow-x: auto;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      line-height: 1.6;
+    }
+    .code-block code {
+      font-family: inherit;
+      color: inherit;
+    }
+    .issue-list {
+      list-style: none;
+      padding: 0;
+    }
+    .issue-list li {
+      padding: 0.5rem 0 0.5rem 1.5rem;
+      position: relative;
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .issue-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .appendix-cta {
+      background: var(--ink);
+      color: var(--bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .appendix-cta .appendix-tag {
+      color: var(--accent-soft);
+    }
+    .appendix-cta h4 {
+      color: white;
+    }
+    .appendix-cta p {
+      color: rgba(255, 255, 255, 0.75);
+    }
+    .appendix-cta .btn {
+      background: var(--accent);
+      border-color: var(--accent);
+      align-self: flex-start;
+    }
+    .appendix-cta .btn:hover {
+      background: var(--bg);
+      color: var(--ink);
+      border-color: var(--bg);
+    }
+
+    /* ABOUT */
+    .about {
+      padding: 5rem 0;
+      background: var(--highlight);
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .about-photo {
+      aspect-ratio: 4/5;
+      background: var(--ink);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 10px 10px 0 var(--accent);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .about-photo:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 12px 12px 0 var(--accent);
+    }
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%) contrast(1.05);
+      mix-blend-mode: luminosity;
+    }
+    .about-photo-placeholder {
+      color: var(--accent-soft);
+      font-family: 'Fraunces', serif;
+      font-size: 5rem;
+      font-weight: 300;
+      font-style: italic;
+      text-align: center;
+      line-height: 1.1;
+    }
+    .about-photo-placeholder small {
+      display: block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-style: normal;
+      margin-top: 1.5rem;
+      color: rgba(232, 196, 180, 0.6);
+    }
+    .about h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .about p {
+      color: var(--ink-soft);
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .skill-tag {
+      background: white;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    /* CONTACT */
+    .contact {
+      padding: 6rem 0;
+      text-align: center;
+    }
+    .contact h2 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    .contact h2 em {
+      color: var(--accent);
+      font-style: italic;
+      font-weight: 300;
+    }
+    .contact p {
+      font-size: 1.15rem;
+      color: var(--ink-soft);
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
+    .contact-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      color: var(--ink-faint);
+      font-size: 0.85rem;
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-in {
+      animation: fadeUp 0.8s ease-out backwards;
+    }
+    .animate-in:nth-child(1) { animation-delay: 0.1s; }
+    .animate-in:nth-child(2) { animation-delay: 0.2s; }
+    .animate-in:nth-child(3) { animation-delay: 0.3s; }
+    .animate-in:nth-child(4) { animation-delay: 0.4s; }
+
+    /* Mobile */
+    @media (max-width: 900px) {
+      .hero-grid,
+      .overview-grid,
+      .chart-grid,
+      .findings-grid,
+      .method-steps,
+      .impact-grid,
+      .about-grid,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      .kpi-row {
+        grid-template-columns: 1fr 1fr;
+      }
+      nav ul {
+        gap: 1rem;
+      }
+      nav ul li:nth-child(2),
+      nav ul li:nth-child(3) {
+        display: none;
+      }
+      .container {
+        padding: 0 1.25rem;
+      }
+      section {
+        padding: 3rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container">
+      <div class="logo"><span class="logo-dot"></span>Saif Shaikh</div>
+      <ul>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#findings">Findings</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <p class="hero-eyebrow animate-in">Supply Chain &amp; Operations Analytics</p>
+          <h1 class="animate-in">
+            Turning fragmented data into <em>decisions</em> that scale.
+          </h1>
+          <p class="hero-subtitle animate-in">
+            I'm Saif, a Business Analyst with a Master's in Business Analytics and 3+ years
+            of experience across manufacturing, consulting, and ERP-driven operations.
+            This is a portfolio project showing how I approach real supply chain problems.
+          </p>
+          <div class="hero-ctas animate-in">
+            <a href="#project" class="btn">View the project →</a>
+            <a href="#contact" class="btn btn-outline">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-stats animate-in">
+          <div class="hero-stat">
+            <div class="hero-stat-value">500<span class="unit">+</span></div>
+            <div class="hero-stat-label">SKUs Analyzed</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">$2.1<span class="unit">M</span></div>
+            <div class="hero-stat-label">Recovery Identified</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">20</div>
+            <div class="hero-stat-label">Vendors Scored</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">44<span class="unit">%</span></div>
+            <div class="hero-stat-label">Inventory Flagged</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT OVERVIEW -->
+  <section class="overview" id="project">
+    <div class="container">
+      <p class="section-eyebrow">The Project</p>
+      <h2 class="section-title">Supply Chain Optimization Study: <em>Where is the money hiding?</em></h2>
+      <p class="section-subtitle" style="color: rgba(255,255,255,0.75);">
+        A mid-sized industrial distributor was flying blind — leadership knew inventory was too high
+        and service levels were slipping, but nobody could say <em>where</em> or <em>why</em>.
+        I analyzed 500 SKUs across 20 vendors to find out.
+      </p>
+
+      <div class="overview-grid">
+        <div class="overview-card">
+          <span class="num">01</span>
+          <h3>The Problem</h3>
+          <p>
+            Leadership couldn't answer basic questions: which SKUs are overstocked? Which vendors are dragging service? Where is working capital locked up? Classic symptoms of data living in silos.
+          </p>
+        </div>
+        <div class="overview-card">
+          <span class="num">02</span>
+          <h3>The Approach</h3>
+          <p>
+            I pulled procurement, inventory, and vendor performance data, joined them into one view, and built a dashboard to surface cost, stock, and service-level issues at the SKU and vendor level.
+          </p>
+        </div>
+        <div class="overview-card">
+          <span class="num">03</span>
+          <h3>The Outcome</h3>
+          <p>
+            Identified $2.1M in recoverable working capital and revenue exposure, flagged 5 vendors for strategic review, and delivered a roadmap for ongoing inventory and service optimization.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section class="dashboard" id="dashboard">
+    <div class="container">
+      <p class="section-eyebrow">Live Dashboard</p>
+      <h2 class="section-title">What the data <em>actually</em> said</h2>
+      <p class="section-subtitle">
+        Every chart below is built from real analysis on the project dataset. Hover to explore.
+      </p>
+
+      <!-- KPI ROW -->
+      <div class="kpi-row">
+        <div class="kpi-card neutral">
+          <div class="kpi-label">Total Annual Spend</div>
+          <div class="kpi-value" id="kpi-spend">$9.97M</div>
+          <div class="kpi-sub">across 500 SKUs &amp; 20 vendors</div>
+        </div>
+        <div class="kpi-card warning">
+          <div class="kpi-label">Inventory Locked Up</div>
+          <div class="kpi-value" id="kpi-locked">$912K</div>
+          <div class="kpi-sub">44.8% of SKUs overstocked</div>
+        </div>
+        <div class="kpi-card alert">
+          <div class="kpi-label">Revenue at Risk</div>
+          <div class="kpi-value" id="kpi-stockout">$1.25M</div>
+          <div class="kpi-sub">50 SKUs at stockout risk</div>
+        </div>
+        <div class="kpi-card success">
+          <div class="kpi-label">Avg On-Time Delivery</div>
+          <div class="kpi-value" id="kpi-otd">85.2%</div>
+          <div class="kpi-sub">bottom 5 vendors drag this</div>
+        </div>
+      </div>
+
+      <!-- CHART ROW 1 -->
+      <div class="chart-grid">
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">Inventory Health Distribution</div>
+            <div class="chart-subtitle">500 SKUs bucketed by days-on-hand policy</div>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="chart-stock"></canvas></div>
+          <div class="chart-insight">
+            <strong>The ugly truth:</strong> Fewer than half the SKUs are at healthy stock levels.
+            The business is sitting on nearly $1M of inventory that won't move for months.
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">Spend by Category</div>
+            <div class="chart-subtitle">Where the procurement dollars go</div>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="chart-category"></canvas></div>
+          <div class="chart-insight">
+            <strong>Where to focus:</strong> Packaging and Components together represent over 50% of spend — a natural first target for sourcing strategy and inventory policy review.
+          </div>
+        </div>
+      </div>
+
+      <!-- CHART ROW 2 -->
+      <div class="chart-grid">
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">Top 10 Vendors by Spend</div>
+            <div class="chart-subtitle">Total annual spend (darker = better OTD)</div>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="chart-top-vendors"></canvas></div>
+          <div class="chart-insight">
+            <strong>Concentration check:</strong> Top 10 vendors represent the bulk of spend. Several of them have middling on-time delivery — worth a sourcing conversation.
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">Bottom 5 Vendors by On-Time Delivery</div>
+            <div class="chart-subtitle">Underperformers sorted by OTD rate</div>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="chart-worst-vendors"></canvas></div>
+          <div class="chart-insight">
+            <strong>Immediate action:</strong> These 5 vendors underperform on service yet hold 22.5% of total spend. Priority candidates for corrective action, backup sourcing, or replacement.
+          </div>
+        </div>
+      </div>
+
+      <!-- CHART ROW 3 -->
+      <div class="chart-grid">
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">Lead Time Distribution</div>
+            <div class="chart-subtitle">Days between order and receipt</div>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="chart-lead-time"></canvas></div>
+          <div class="chart-insight">
+            <strong>Planning signal:</strong> A long tail of SKUs with 30+ day lead times means safety stock policy needs to flex by item, not one global rule.
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">Spend by Region</div>
+            <div class="chart-subtitle">Where the sourcing footprint sits</div>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="chart-region"></canvas></div>
+          <div class="chart-insight">
+            <strong>Diversification lens:</strong> Regional concentration creates both opportunity (volume consolidation) and risk (geopolitical, logistics). Worth monitoring.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINDINGS -->
+  <section class="findings" id="findings">
+    <div class="container">
+      <p class="section-eyebrow">Key Findings</p>
+      <h2 class="section-title">Five insights that would <em>change</em> the business.</h2>
+      <p class="section-subtitle">
+        A dashboard is only as useful as the decisions it drives. Here's what the data told me to do.
+      </p>
+
+      <div class="findings-grid">
+        <div class="finding-card">
+          <div class="finding-num">FINDING 01</div>
+          <h3>Nearly half the inventory is tying up working capital</h3>
+          <p>
+            44.8% of SKUs are overstocked against policy — with $912K in locked inventory. Most of it sits in Packaging and Components, where ordering patterns don't match demand velocity.
+          </p>
+          <div class="finding-impact">→ $912,390 in recoverable working capital</div>
+        </div>
+
+        <div class="finding-card">
+          <div class="finding-num">FINDING 02</div>
+          <h3>50 SKUs are at active stockout risk</h3>
+          <p>
+            10% of the catalog has less than 7 days of stock on hand. These SKUs represent $1.25M in annual revenue — and they're one supply disruption away from hurting service levels.
+          </p>
+          <div class="finding-impact">→ $1.25M revenue exposure</div>
+        </div>
+
+        <div class="finding-card">
+          <div class="finding-num">FINDING 03</div>
+          <h3>5 vendors hold 22.5% of spend while underperforming</h3>
+          <p>
+            The bottom 5 vendors by on-time delivery average below 75%, yet still hold $2.2M in annual spend. That's a strategic sourcing problem, not a vendor management problem.
+          </p>
+          <div class="finding-impact">→ $2.24M of spend needs repositioning</div>
+        </div>
+
+        <div class="finding-card">
+          <div class="finding-num">FINDING 04</div>
+          <h3>Lead times vary wildly — but policy is uniform</h3>
+          <p>
+            Lead times range from 3 to 90 days. Applying a uniform safety stock rule means we're either over-investing in fast-moving items or under-protecting slow-moving ones.
+          </p>
+          <div class="finding-impact">→ SKU-level policy needed, not global</div>
+        </div>
+
+        <div class="finding-card">
+          <div class="finding-num">FINDING 05</div>
+          <h3>Two categories drive more than half the spend</h3>
+          <p>
+            Packaging (28.5%) and Components (23.1%) together are over half of all procurement. Any sourcing, negotiation, or inventory work starts here — biggest surface area for impact.
+          </p>
+          <div class="finding-impact">→ 51.6% of spend in two categories</div>
+        </div>
+
+        <div class="finding-card">
+          <div class="finding-num">FINDING 06</div>
+          <h3>Data integrity is the real bottleneck</h3>
+          <p>
+            The hardest part wasn't the analysis — it was reconciling procurement, inventory, and finance data that lived in separate systems. Without a single source of truth, none of the above insights were visible.
+          </p>
+          <div class="finding-impact">→ Master data is the foundation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY -->
+  <section class="methodology" id="methodology">
+    <div class="container">
+      <p class="section-eyebrow">The Process</p>
+      <h2 class="section-title">How I actually <em>did</em> this.</h2>
+      <p class="section-subtitle">
+        Every good analyst shows their work. Here's the workflow — end to end.
+      </p>
+
+      <div class="method-steps">
+        <div class="method-step">
+          <span class="method-step-num">01</span>
+          <h4>Data Sourcing &amp; Cleaning</h4>
+          <p>
+            Pulled a public supply chain dataset, validated schema, resolved missing fields, and joined procurement, inventory, and vendor performance into one unified table.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="method-step">
+          <span class="method-step-num">02</span>
+          <h4>KPI Definition</h4>
+          <p>
+            Defined the metrics that mattered: Days-on-Hand, on-time delivery, spend concentration, stock status categorization, and lead-time segmentation.
+          </p>
+          <div class="tags">
+            <span class="tag">Excel</span>
+            <span class="tag">KPI Design</span>
+            <span class="tag">Policy Logic</span>
+          </div>
+        </div>
+
+        <div class="method-step">
+          <span class="method-step-num">03</span>
+          <h4>Analysis &amp; Synthesis</h4>
+          <p>
+            Ran vendor performance analysis, stock-position bucketing, category-level spend breakdowns, and lead-time variability — then synthesized the 6 most actionable findings.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Statistical</span>
+            <span class="tag">AI Tools</span>
+          </div>
+        </div>
+
+        <div class="method-step">
+          <span class="method-step-num">04</span>
+          <h4>Dashboard &amp; Storytelling</h4>
+          <p>
+            Built this live, interactive dashboard in HTML/CSS/JS with Chart.js so decision-makers can explore the data themselves — not just read a static deck.
+          </p>
+          <div class="tags">
+            <span class="tag">Chart.js</span>
+            <span class="tag">Data Viz</span>
+            <span class="tag">Storytelling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="impact">
+    <div class="container">
+      <p class="section-eyebrow">Business Impact</p>
+      <h2 class="section-title" style="color: white;">This isn't a <em>dashboard</em>. It's a decision engine.</h2>
+      <p class="section-subtitle" style="color: rgba(255,255,255,0.75);">
+        If a company acted on what this analysis uncovered, here's what they'd unlock.
+      </p>
+
+      <div class="impact-grid">
+        <ul class="impact-list">
+          <li>
+            <strong>$912K</strong>
+            <p>in locked working capital that could be freed by right-sizing inventory against policy.</p>
+          </li>
+          <li>
+            <strong>$1.25M</strong>
+            <p>in revenue protected by addressing the 50 SKUs currently at stockout risk.</p>
+          </li>
+          <li>
+            <strong>22.5%</strong>
+            <p>of total spend repositioned away from underperforming vendors via strategic sourcing.</p>
+          </li>
+          <li>
+            <strong>~15%</strong>
+            <p>improvement in on-time delivery achievable by addressing the bottom 5 vendors alone.</p>
+          </li>
+          <li>
+            <strong>100%</strong>
+            <p>visibility — a single source of truth replacing the old data-in-silos status quo.</p>
+          </li>
+        </ul>
+        <div>
+          <div style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);">
+            <p style="color: var(--accent-soft); font-family: 'Fraunces', serif; font-style: italic; font-size: 1.3rem; line-height: 1.5; margin-bottom: 1.5rem;">
+              "A dashboard shows what is happening. An analyst helps decide what to do next."
+            </p>
+            <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+              This project was designed to demonstrate exactly that: not just building a nice visualization, but asking the questions that change how a business operates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL APPENDIX -->
+  <section class="appendix" id="appendix">
+    <div class="container">
+      <p class="section-eyebrow">Technical Appendix</p>
+      <h2 class="section-title">Want to see the <em>messy</em> part?</h2>
+      <p class="section-subtitle">
+        Clean charts come from dirty data. Here's the actual pipeline — code, queries, and all.
+      </p>
+
+      <div class="appendix-grid">
+        <div class="appendix-card">
+          <div class="appendix-tag">PYTHON · PANDAS</div>
+          <h4>Data cleaning &amp; reconciliation</h4>
+          <p>Before any analysis, procurement, inventory, and vendor data had to be joined, de-duplicated, and validated. Sample snippet below.</p>
+          <pre class="code-block"><code>df = pd.merge(procurement, inventory, on='SKU', how='outer')
+df['Days_On_Hand'] = df['Current_Stock'] / (df['Annual_Demand'] / 365)
+df['Stock_Status'] = pd.cut(df['Days_On_Hand'],
+    bins=[0, 7, 30, 90, float('inf')],
+    labels=['Stockout Risk', 'Healthy', 'Overstocked', 'Severely Overstocked']
+)</code></pre>
+        </div>
+
+        <div class="appendix-card">
+          <div class="appendix-tag">SQL · KPI LOGIC</div>
+          <h4>Vendor performance scoring</h4>
+          <p>Aggregated vendor-level metrics across 500 SKUs to identify both cost and service risks in one view.</p>
+          <pre class="code-block"><code>SELECT
+  vendor,
+  COUNT(sku) AS sku_count,
+  SUM(annual_spend) AS total_spend,
+  AVG(on_time_delivery_rate) AS avg_otd,
+  AVG(lead_time_days) AS avg_lead_time
+FROM supply_chain
+GROUP BY vendor
+ORDER BY avg_otd ASC;</code></pre>
+        </div>
+
+        <div class="appendix-card">
+          <div class="appendix-tag">ANALYSIS</div>
+          <h4>Why master data is the real bottleneck</h4>
+          <p>The hardest part of this project wasn't the model — it was reconciling three systems that described the same SKU differently. Key issues I had to resolve:</p>
+          <ul class="issue-list">
+            <li>SKU codes with inconsistent casing and trailing spaces</li>
+            <li>Vendor names that varied between systems (e.g., "Acme Corp." vs. "Acme Corporation")</li>
+            <li>Currency and unit conversion across regions</li>
+            <li>Missing lead-time data for 8% of SKUs — filled via vendor-level averages</li>
+          </ul>
+        </div>
+
+        <div class="appendix-card appendix-cta">
+          <div class="appendix-tag">OPEN SOURCE</div>
+          <h4>Full code &amp; dataset on GitHub</h4>
+          <p>Dataset, Python analysis notebook, and this site's source code are all public. Fork it, critique it, or use it as a template.</p>
+          <a href="https://github.com/saifshaikh" class="btn" target="_blank" rel="noopener">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!--
+          SWAP PLACEHOLDER FOR REAL PHOTO:
+          Replace the <div class="about-photo-placeholder">...</div> below with:
+          <img src="headshot.jpg" alt="Saif Shaikh" />
+          Place headshot.jpg in the same folder as index.html.
+          A vertical 4:5 professional headshot works best with this design.
+        -->
+        <div class="about-photo">
+          <div class="about-photo-placeholder">
+            Saif
+            <small>Business Analyst</small>
+          </div>
+        </div>
+        <div>
+          <p class="section-eyebrow">About Me</p>
+          <h3>Business Analyst with a bias for action.</h3>
+          <p>
+            I'm a Business Analyst with a Master's in Business Analytics from Hult International Business School and 3+ years of hands-on experience across manufacturing, consulting, and ERP-driven operations.
+          </p>
+          <p>
+            At EagleBurgmann (part of the Freudenberg Group), I worked on a global SAP S/4HANA rollout across a multi-plant manufacturing network, where I helped drive a 25% faster PO cycle time, 18% improvement in inventory accuracy, and 15% higher on-time vendor delivery.
+          </p>
+          <p>
+            More recently at Consciously Exposed Consulting in Boston, I built dashboards, automated workflows with generative AI, and supported firm leadership on client growth initiatives — cutting manual effort by 50%.
+          </p>
+          <p>
+            I'm most interested in work that sits where data meets operations: supply chain, logistics, manufacturing analytics, and the kind of traditional business where getting the details right actually moves the business.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-tag">SAP S/4HANA</div>
+            <div class="skill-tag">SQL</div>
+            <div class="skill-tag">Power BI</div>
+            <div class="skill-tag">Tableau</div>
+            <div class="skill-tag">Python</div>
+            <div class="skill-tag">Advanced Excel</div>
+            <div class="skill-tag">Generative AI</div>
+            <div class="skill-tag">Process Improvement</div>
+            <div class="skill-tag">Business Analysis</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-eyebrow" style="justify-content: center;">Let's Talk</p>
+      <h2>Looking for an analyst who <em>thinks</em> before querying?</h2>
+      <p>
+        I'm actively exploring Business Analyst, Supply Chain Analyst, and Strategy Analyst roles across the US. If this project resonates, I'd love to talk.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:saifshaikh2205@gmail.com" class="btn">Email me →</a>
+        <a href="https://linkedin.com/in/saif-shaikh" class="btn btn-outline" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Saif Shaikh &nbsp; · &nbsp; Built with HTML, CSS, Chart.js &amp; caffeine.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Chart.js defaults
+    Chart.defaults.font.family = 'Inter, sans-serif';
+    Chart.defaults.color = '#4a4a4a';
+    Chart.defaults.borderColor = '#dcd4c4';
+
+    // Shared tooltip style
+    const tooltipStyle = {
+      backgroundColor: '#1a1a1a',
+      titleFont: { family: 'Fraunces', size: 14, weight: '600' },
+      bodyFont: { family: 'Inter', size: 12 },
+      padding: 12,
+      cornerRadius: 4,
+      displayColors: false
+    };
+    Chart.defaults.plugins.tooltip = { ...Chart.defaults.plugins.tooltip, ...tooltipStyle };
+
+    const PALETTE = {
+      accent: '#c9502b',
+      accentSoft: '#e8c4b4',
+      ink: '#1a1a1a',
+      inkSoft: '#4a4a4a',
+      success: '#4a7c59',
+      warning: '#d4a017',
+      danger: '#c9502b',
+      neutral: '#8a8a8a'
+    };
+
+    // 1. Stock distribution
+    new Chart(document.getElementById('chart-stock'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Healthy', 'Overstocked', 'Severely Overstocked', 'Stockout Risk'],
+        datasets: [{
+          data: [226, 172, 52, 50],
+          backgroundColor: [PALETTE.success, PALETTE.warning, PALETTE.danger, PALETTE.ink],
+          borderWidth: 2,
+          borderColor: '#ffffff'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        cutout: '60%',
+        plugins: {
+          legend: { position: 'bottom', labels: { padding: 15, usePointStyle: true, font: { size: 11 } } },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => {
+                const pct = ((ctx.raw / 500) * 100).toFixed(1);
+                return `${ctx.label}: ${ctx.raw} SKUs (${pct}%)`;
+              }
+            }
+          }
+        }
+      }
+    });
+
+    // 2. Category spend
+    new Chart(document.getElementById('chart-category'), {
+      type: 'bar',
+      data: {
+        labels: ['Packaging', 'Components', 'Consumables', 'Finished Goods', 'Raw Materials'],
+        datasets: [{
+          label: 'Annual Spend',
+          data: [2841805, 2304978, 1774033, 1725538, 1327443],
+          backgroundColor: [PALETTE.accent, PALETTE.accent, PALETTE.accentSoft, PALETTE.accentSoft, PALETTE.accentSoft],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => {
+                const total = 9973797;
+                const pct = ((ctx.raw / total) * 100).toFixed(1);
+                return `$${ctx.raw.toLocaleString()} (${pct}% of spend)`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            ticks: { callback: val => '$' + (val / 1000000).toFixed(1) + 'M' },
+            grid: { color: '#f0ece4' }
+          },
+          y: { grid: { display: false } }
+        }
+      }
+    });
+
+    // 3. Top vendors by spend — color-coded by OTD performance
+    // Darker = higher OTD (better performer). Lighter = lower OTD (risk).
+    const topVendorsData = [
+      { name: 'CoreTech',       spend: 824747, otd: 0.93 },
+      { name: 'Pinnacle',       spend: 780000, otd: 0.96 },
+      { name: 'Dynamic Parts',  spend: 459804, otd: 0.79 },
+      { name: 'Heritage',       spend: 712500, otd: 0.93 },
+      { name: 'Titan Mfg',      spend: 690000, otd: 0.91 },
+      { name: 'LumenTech',      spend: 560000, otd: 0.94 },
+      { name: 'Apex Mfg',       spend: 408851, otd: 0.92 },
+      { name: 'Meridian',       spend: 495000, otd: 0.86 },
+      { name: 'Standard Ind',   spend: 425000, otd: 0.87 },
+      { name: 'Omega',          spend: 380000, otd: 0.72 }
+    ];
+
+    // Map OTD (0.70 – 0.96) to an alpha between 0.3 (worst) and 1.0 (best)
+    function otdToAlpha(otd) {
+      const minOtd = 0.70, maxOtd = 0.96;
+      const pct = (otd - minOtd) / (maxOtd - minOtd);
+      return Math.max(0.3, Math.min(1.0, 0.3 + pct * 0.7));
+    }
+
+    new Chart(document.getElementById('chart-top-vendors'), {
+      type: 'bar',
+      data: {
+        labels: topVendorsData.map(v => v.name),
+        datasets: [{
+          label: 'Annual Spend',
+          data: topVendorsData.map(v => v.spend),
+          backgroundColor: topVendorsData.map(v => `rgba(26, 26, 26, ${otdToAlpha(v.otd)})`),
+          borderRadius: 4,
+          // Store OTD on the dataset for tooltips
+          otdValues: topVendorsData.map(v => v.otd)
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: PALETTE.ink,
+            titleFont: { family: 'Fraunces', size: 14, weight: '600' },
+            bodyFont: { family: 'Inter', size: 12 },
+            padding: 12,
+            displayColors: false,
+            callbacks: {
+              label: (ctx) => {
+                const otd = topVendorsData[ctx.dataIndex].otd;
+                return [
+                  `Spend: $${ctx.raw.toLocaleString()}`,
+                  `On-Time Delivery: ${(otd * 100).toFixed(1)}%`
+                ];
+              }
+            }
+          }
+        },
+        scales: {
+          x: { grid: { display: false }, ticks: { font: { size: 10 } } },
+          y: {
+            ticks: { callback: val => '$' + (val / 1000).toFixed(0) + 'K' },
+            grid: { color: '#f0ece4' }
+          }
+        }
+      }
+    });
+
+    // 4. Worst vendors by OTD
+    const worstVendorsSpend = [2241000, 1850000, 1420000, 1100000, 980000]; // approx spend for context
+    new Chart(document.getElementById('chart-worst-vendors'), {
+      type: 'bar',
+      data: {
+        labels: ['UnionTech Supply', 'Keystone Materials', 'Omega Components', 'Global Metals Ltd', 'Dynamic Parts Co'],
+        datasets: [{
+          label: 'On-Time Delivery Rate',
+          data: [67.8, 70.2, 72.1, 75.3, 79.1],
+          backgroundColor: [PALETTE.danger, PALETTE.danger, PALETTE.warning, PALETTE.warning, PALETTE.warning],
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => {
+                const spend = worstVendorsSpend[ctx.dataIndex];
+                return [
+                  `OTD: ${ctx.raw}%`,
+                  `Est. spend at risk: $${(spend / 1000).toFixed(0)}K`
+                ];
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            min: 60, max: 100,
+            ticks: { callback: val => val + '%' },
+            grid: { color: '#f0ece4' }
+          },
+          y: { grid: { display: false } }
+        }
+      }
+    });
+
+    // 5. Lead time distribution
+    new Chart(document.getElementById('chart-lead-time'), {
+      type: 'bar',
+      data: {
+        labels: ['1-7 days', '8-14 days', '15-21 days', '22-30 days', '31-45 days', '46+ days'],
+        datasets: [{
+          label: 'SKU Count',
+          data: [38, 95, 148, 125, 68, 26],
+          backgroundColor: PALETTE.accent,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: PALETTE.ink,
+            titleFont: { family: 'Fraunces', size: 14, weight: '600' },
+            bodyFont: { family: 'Inter', size: 12 },
+            padding: 12,
+            displayColors: false,
+            callbacks: {
+              label: (ctx) => {
+                const total = 500;
+                const pct = ((ctx.raw / total) * 100).toFixed(1);
+                return `${ctx.raw} SKUs (${pct}% of catalog)`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: { grid: { display: false } },
+          y: { grid: { color: '#f0ece4' } }
+        }
+      }
+    });
+
+    // 6. Region spend
+    new Chart(document.getElementById('chart-region'), {
+      type: 'polarArea',
+      data: {
+        labels: ['North America', 'Europe', 'Asia-Pacific', 'Latin America'],
+        datasets: [{
+          data: [2800000, 2500000, 3100000, 1573000],
+          backgroundColor: [
+            'rgba(184, 69, 32, 0.85)',
+            'rgba(168, 125, 16, 0.85)',
+            'rgba(61, 106, 74, 0.85)',
+            'rgba(26, 26, 26, 0.85)'
+          ],
+          borderColor: '#ffffff',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'bottom', labels: { padding: 15, font: { size: 11 } } },
+          tooltip: {
+            backgroundColor: PALETTE.ink,
+            titleFont: { family: 'Fraunces', size: 14, weight: '600' },
+            bodyFont: { family: 'Inter', size: 12 },
+            padding: 12,
+            displayColors: false,
+            callbacks: {
+              label: (ctx) => {
+                const total = ctx.dataset.data.reduce((a, b) => a + b, 0);
+                const pct = ((ctx.raw / total) * 100).toFixed(1);
+                return `Spend: $${(ctx.raw / 1000000).toFixed(2)}M (${pct}%)`;
+              }
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

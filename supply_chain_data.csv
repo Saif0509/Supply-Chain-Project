@@ -1,0 +1,501 @@
+SKU,Vendor,Category,Region,Unit_Cost,Annual_Demand,Lead_Time_Days,Current_Stock,Days_On_Hand,Stock_Status,On_Time_Delivery_Rate,Annual_Spend
+SKU-0001,Dynamic Parts Co,Raw Materials,Asia-Pacific,33.01,351,27,25,26.0,Healthy,0.79,11586.51
+SKU-0002,Heritage Industrial,Components,Europe,55.18,225,15,10,16.2,Healthy,0.83,12415.5
+SKU-0003,Dynamic Parts Co,Consumables,North America,5.0,229,10,11,17.5,Healthy,0.74,1145.0
+SKU-0004,Titan Manufacturing,Packaging,North America,5.0,214,26,11,18.8,Healthy,0.92,1070.0
+SKU-0005,Apex Manufacturing,Raw Materials,Europe,6.35,587,14,55,34.2,Overstocked,0.87,3727.45
+SKU-0006,Heritage Industrial,Consumables,North America,17.09,236,20,63,97.4,Severely Overstocked,0.87,4033.24
+SKU-0007,Standard Industrial,Components,Latin America,24.75,56,7,21,136.9,Severely Overstocked,0.88,1386.0
+SKU-0008,Heritage Industrial,Packaging,Asia-Pacific,48.51,147,5,4,9.9,Healthy,0.98,7130.97
+SKU-0009,Apex Manufacturing,Components,Latin America,28.32,69,24,1,5.3,Stockout Risk,0.95,1954.08
+SKU-0010,LumenTech,Finished Goods,Europe,48.8,986,28,7,2.6,Stockout Risk,0.92,48116.8
+SKU-0011,Global Metals Ltd,Finished Goods,North America,27.97,1070,16,40,13.6,Healthy,0.81,29927.9
+SKU-0012,CoreTech Supply,Packaging,North America,8.18,929,23,68,26.7,Healthy,0.92,7599.22
+SKU-0013,Meridian Parts,Finished Goods,Asia-Pacific,28.83,1878,20,186,36.2,Overstocked,0.84,54142.74
+SKU-0014,BlueLine Industrial,Packaging,North America,18.9,97,31,6,22.6,Healthy,0.9,1833.3
+SKU-0015,Northstar Industrial,Raw Materials,Asia-Pacific,88.05,240,12,57,86.7,Overstocked,0.92,21132.0
+SKU-0016,UnionTech Supply,Finished Goods,Europe,63.96,521,24,22,15.4,Healthy,0.73,33323.16
+SKU-0017,CoreTech Supply,Raw Materials,Europe,9.95,290,17,39,49.1,Overstocked,0.82,2885.5
+SKU-0018,Keystone Materials,Raw Materials,Europe,28.38,271,18,10,13.5,Healthy,0.72,7690.98
+SKU-0019,Dynamic Parts Co,Packaging,Asia-Pacific,132.45,480,23,179,136.1,Severely Overstocked,0.78,63576.0
+SKU-0020,Pinnacle Supply,Finished Goods,Europe,5.0,138,11,1,2.6,Stockout Risk,1.0,690.0
+SKU-0021,Meridian Parts,Finished Goods,Europe,16.57,545,20,191,127.9,Severely Overstocked,0.9,9030.65
+SKU-0022,Innovate Supply,Raw Materials,Europe,6.36,185,28,23,45.4,Overstocked,0.78,1176.6
+SKU-0023,Standard Industrial,Components,Europe,36.12,3606,11,0,0.0,Stockout Risk,0.96,130248.72
+SKU-0024,Pinnacle Supply,Packaging,Asia-Pacific,48.11,407,17,7,6.3,Stockout Risk,0.98,19580.77
+SKU-0025,Standard Industrial,Components,Asia-Pacific,8.01,1900,13,462,88.8,Overstocked,0.85,15219.0
+SKU-0026,BlueLine Industrial,Components,North America,35.03,1145,26,37,11.8,Healthy,0.89,40109.35
+SKU-0027,LumenTech,Packaging,Asia-Pacific,26.05,881,8,63,26.1,Healthy,0.97,22950.05
+SKU-0028,CoreTech Supply,Components,Asia-Pacific,67.83,505,29,7,5.1,Stockout Risk,0.91,34254.15
+SKU-0029,Global Metals Ltd,Packaging,Latin America,129.77,647,9,73,41.2,Overstocked,0.71,83961.19
+SKU-0030,Pinnacle Supply,Components,Asia-Pacific,6.49,871,33,160,67.0,Overstocked,1.0,5652.79
+SKU-0031,Eastern Components,Components,Asia-Pacific,15.71,189,12,67,129.4,Severely Overstocked,0.86,2969.19
+SKU-0032,Titan Manufacturing,Packaging,Latin America,15.81,1352,26,82,22.1,Healthy,1.0,21375.12
+SKU-0033,Meridian Parts,Components,Europe,37.55,171,10,44,93.9,Severely Overstocked,0.85,6421.05
+SKU-0034,Regional Supply Co,Packaging,North America,42.11,256,28,14,20.0,Healthy,0.84,10780.16
+SKU-0035,BlueLine Industrial,Raw Materials,Europe,24.88,116,22,8,25.2,Healthy,0.89,2886.08
+SKU-0036,FrontierLogistics,Packaging,North America,8.94,1161,21,142,44.6,Overstocked,0.95,10379.34
+SKU-0037,Northstar Industrial,Packaging,Latin America,5.06,157,26,27,62.8,Overstocked,0.89,794.42
+SKU-0038,Regional Supply Co,Finished Goods,North America,48.03,1698,21,203,43.6,Overstocked,0.83,81554.94
+SKU-0039,Dynamic Parts Co,Consumables,Asia-Pacific,14.65,861,13,53,22.5,Healthy,0.78,12613.65
+SKU-0040,LumenTech,Raw Materials,Asia-Pacific,11.77,67,24,3,16.3,Healthy,0.99,788.59
+SKU-0041,Omega Components,Components,Latin America,21.42,137,13,15,40.0,Overstocked,0.84,2934.54
+SKU-0042,Apex Manufacturing,Finished Goods,Europe,126.9,1577,29,524,121.3,Severely Overstocked,0.93,200121.3
+SKU-0043,Regional Supply Co,Raw Materials,Asia-Pacific,10.36,946,13,5,1.9,Stockout Risk,0.76,9800.56
+SKU-0044,Regional Supply Co,Consumables,Europe,105.77,288,17,22,27.9,Healthy,0.82,30461.76
+SKU-0045,Eastern Components,Finished Goods,Europe,5.69,1010,42,89,32.2,Overstocked,0.78,5746.9
+SKU-0046,Standard Industrial,Consumables,North America,5.58,318,39,0,0.0,Stockout Risk,0.82,1774.44
+SKU-0047,UnionTech Supply,Finished Goods,Latin America,15.6,115,37,8,25.4,Healthy,0.67,1794.0
+SKU-0048,Apex Manufacturing,Raw Materials,Asia-Pacific,12.61,427,44,62,53.0,Overstocked,0.94,5384.47
+SKU-0049,Keystone Materials,Components,North America,24.51,221,21,53,87.5,Overstocked,0.61,5416.71
+SKU-0050,Heritage Industrial,Consumables,North America,72.28,218,42,13,21.8,Healthy,0.96,15757.04
+SKU-0051,CoreTech Supply,Packaging,North America,26.6,216,18,33,55.8,Overstocked,0.92,5745.6
+SKU-0052,Standard Industrial,Components,Europe,14.08,1045,35,278,97.1,Severely Overstocked,0.9,14713.6
+SKU-0053,Quality Metals,Consumables,Europe,8.77,230,28,89,141.2,Severely Overstocked,0.74,2017.1
+SKU-0054,Innovate Supply,Consumables,Latin America,5.93,206,32,50,88.6,Overstocked,0.9,1221.58
+SKU-0055,Global Metals Ltd,Consumables,Europe,45.85,910,34,38,15.2,Healthy,0.74,41723.5
+SKU-0056,Keystone Materials,Packaging,Asia-Pacific,47.18,307,14,115,136.7,Severely Overstocked,0.73,14484.26
+SKU-0057,Pinnacle Supply,Consumables,Latin America,8.86,3269,10,244,27.2,Healthy,1.0,28963.34
+SKU-0058,Dynamic Parts Co,Components,Europe,39.14,200,20,17,31.0,Overstocked,0.77,7828.0
+SKU-0059,CoreTech Supply,Finished Goods,North America,8.8,292,25,25,31.2,Overstocked,0.93,2569.6
+SKU-0060,Titan Manufacturing,Consumables,Europe,24.63,705,29,0,0.0,Stockout Risk,0.84,17364.15
+SKU-0061,Titan Manufacturing,Components,North America,9.79,325,24,31,34.8,Overstocked,0.89,3181.75
+SKU-0062,CoreTech Supply,Raw Materials,Europe,19.99,203,20,6,10.8,Healthy,0.91,4057.97
+SKU-0063,CoreTech Supply,Raw Materials,Asia-Pacific,33.76,1868,19,93,18.2,Healthy,0.93,63063.68
+SKU-0064,CoreTech Supply,Consumables,Europe,31.74,432,30,162,136.9,Severely Overstocked,0.91,13711.68
+SKU-0065,Innovate Supply,Packaging,Europe,20.58,663,35,57,31.4,Overstocked,0.91,13644.54
+SKU-0066,Standard Industrial,Components,Latin America,123.48,361,30,29,29.3,Healthy,0.84,44576.28
+SKU-0067,Heritage Industrial,Packaging,Latin America,5.0,238,13,89,136.5,Severely Overstocked,0.83,1190.0
+SKU-0068,Global Metals Ltd,Raw Materials,North America,28.86,714,30,10,5.1,Stockout Risk,0.84,20606.04
+SKU-0069,Omega Components,Finished Goods,Latin America,65.33,252,3,101,146.3,Severely Overstocked,0.73,16463.16
+SKU-0070,Omega Components,Packaging,North America,26.54,50,11,2,14.6,Healthy,0.72,1327.0
+SKU-0071,Dynamic Parts Co,Raw Materials,Latin America,12.81,752,10,279,135.4,Severely Overstocked,0.71,9633.12
+SKU-0072,LumenTech,Raw Materials,Europe,34.31,1164,36,85,26.7,Healthy,0.9,39936.84
+SKU-0073,Global Metals Ltd,Components,Latin America,94.74,452,32,30,24.2,Healthy,0.8,42822.48
+SKU-0074,Eastern Components,Packaging,Europe,23.71,145,18,3,7.6,Healthy,0.89,3437.95
+SKU-0075,Innovate Supply,Packaging,Europe,7.65,801,31,24,10.9,Healthy,0.89,6127.65
+SKU-0076,CoreTech Supply,Packaging,North America,17.51,492,3,98,72.7,Overstocked,0.88,8614.92
+SKU-0077,BlueLine Industrial,Consumables,North America,5.0,381,24,25,24.0,Healthy,0.94,1905.0
+SKU-0078,CoreTech Supply,Components,Europe,5.0,356,20,11,11.3,Healthy,0.9,1780.0
+SKU-0079,Omega Components,Packaging,Latin America,12.01,139,20,16,42.0,Overstocked,0.7,1669.39
+SKU-0080,Global Metals Ltd,Packaging,North America,12.48,178,15,4,8.2,Healthy,0.7,2221.44
+SKU-0081,FrontierLogistics,Packaging,North America,11.55,121,40,1,3.0,Stockout Risk,0.93,1397.55
+SKU-0082,Northstar Industrial,Finished Goods,Latin America,67.0,945,14,84,32.4,Overstocked,0.86,63315.0
+SKU-0083,Keystone Materials,Packaging,Latin America,15.26,50,5,4,29.2,Healthy,0.74,763.0
+SKU-0084,Eastern Components,Components,Asia-Pacific,7.48,415,30,26,22.9,Healthy,0.77,3104.2
+SKU-0085,Global Metals Ltd,Raw Materials,North America,5.0,494,13,0,0.0,Stockout Risk,0.7,2470.0
+SKU-0086,LumenTech,Raw Materials,North America,10.44,186,17,53,104.0,Severely Overstocked,0.98,1941.84
+SKU-0087,Titan Manufacturing,Packaging,Europe,19.93,1772,21,86,17.7,Healthy,0.89,35315.96
+SKU-0088,BlueLine Industrial,Consumables,North America,97.71,273,14,23,30.8,Overstocked,0.98,26674.83
+SKU-0089,FrontierLogistics,Raw Materials,North America,5.0,708,14,22,11.3,Healthy,0.86,3540.0
+SKU-0090,Heritage Industrial,Packaging,North America,11.64,50,27,18,131.4,Severely Overstocked,0.88,582.0
+SKU-0091,Titan Manufacturing,Components,North America,11.28,858,26,197,83.8,Overstocked,1.0,9678.24
+SKU-0092,UnionTech Supply,Raw Materials,Latin America,101.45,1025,13,26,9.3,Healthy,0.59,103986.25
+SKU-0093,Titan Manufacturing,Consumables,Asia-Pacific,5.0,423,23,9,7.8,Healthy,0.85,2115.0
+SKU-0094,Innovate Supply,Components,Asia-Pacific,26.25,6527,4,46,2.6,Stockout Risk,0.83,171333.75
+SKU-0095,Heritage Industrial,Finished Goods,Latin America,54.94,226,29,32,51.7,Overstocked,0.89,12416.44
+SKU-0096,Eastern Components,Finished Goods,Latin America,229.03,68,10,17,91.2,Severely Overstocked,0.79,15574.04
+SKU-0097,LumenTech,Raw Materials,North America,21.9,345,32,10,10.6,Healthy,0.91,7555.5
+SKU-0098,Pinnacle Supply,Consumables,North America,36.17,293,17,50,62.3,Overstocked,1.0,10597.81
+SKU-0099,CoreTech Supply,Consumables,Europe,48.0,291,33,16,20.1,Healthy,0.92,13968.0
+SKU-0100,Regional Supply Co,Finished Goods,Europe,5.0,1154,12,84,26.6,Healthy,0.79,5770.0
+SKU-0101,Meridian Parts,Raw Materials,Europe,46.04,50,23,2,14.6,Healthy,0.87,2302.0
+SKU-0102,Meridian Parts,Finished Goods,Europe,35.48,168,16,30,65.2,Overstocked,0.97,5960.64
+SKU-0103,Pinnacle Supply,Consumables,Asia-Pacific,24.09,517,16,12,8.5,Healthy,1.0,12454.53
+SKU-0104,UnionTech Supply,Consumables,North America,30.03,284,29,45,57.8,Overstocked,0.63,8528.52
+SKU-0105,Standard Industrial,Finished Goods,North America,12.88,588,28,47,29.2,Healthy,0.94,7573.44
+SKU-0106,Eastern Components,Finished Goods,North America,55.07,78,23,0,0.0,Stockout Risk,0.89,4295.46
+SKU-0107,Dynamic Parts Co,Consumables,Europe,38.64,381,23,16,15.3,Healthy,0.77,14721.84
+SKU-0108,Innovate Supply,Finished Goods,Europe,21.05,2397,26,559,85.1,Overstocked,0.87,50456.85
+SKU-0109,LumenTech,Components,Asia-Pacific,131.9,1549,36,370,87.2,Overstocked,0.94,204313.1
+SKU-0110,Regional Supply Co,Packaging,Asia-Pacific,43.86,5108,26,323,23.1,Healthy,0.78,224036.88
+SKU-0111,BlueLine Industrial,Raw Materials,Latin America,7.3,77,29,3,14.2,Healthy,0.94,562.1
+SKU-0112,Innovate Supply,Raw Materials,North America,8.86,89,18,5,20.5,Healthy,0.84,788.54
+SKU-0113,LumenTech,Components,Asia-Pacific,5.0,382,18,31,29.6,Healthy,0.89,1910.0
+SKU-0114,FrontierLogistics,Packaging,Latin America,33.67,181,19,77,155.3,Severely Overstocked,0.9,6094.27
+SKU-0115,Standard Industrial,Raw Materials,North America,20.37,393,22,15,13.9,Healthy,1.0,8005.41
+SKU-0116,CoreTech Supply,Components,North America,6.64,1617,3,149,33.6,Overstocked,0.85,10736.88
+SKU-0117,Meridian Parts,Consumables,Europe,14.26,278,6,23,30.2,Overstocked,0.84,3964.28
+SKU-0118,Omega Components,Components,North America,18.74,655,13,75,41.8,Overstocked,0.66,12274.7
+SKU-0119,Keystone Materials,Finished Goods,North America,11.89,658,8,26,14.4,Healthy,0.74,7823.62
+SKU-0120,Meridian Parts,Components,Europe,7.84,510,23,22,15.7,Healthy,0.89,3998.4
+SKU-0121,Dynamic Parts Co,Finished Goods,Latin America,36.35,296,24,12,14.8,Healthy,0.72,10759.6
+SKU-0122,UnionTech Supply,Components,Europe,8.88,1503,3,22,5.3,Stockout Risk,0.77,13346.64
+SKU-0123,FrontierLogistics,Components,Latin America,5.0,2200,23,362,60.1,Overstocked,0.95,11000.0
+SKU-0124,Apex Manufacturing,Components,Asia-Pacific,19.47,288,34,4,5.1,Stockout Risk,0.83,5607.36
+SKU-0125,Omega Components,Components,Asia-Pacific,5.22,848,22,314,135.2,Severely Overstocked,0.66,4426.56
+SKU-0126,FrontierLogistics,Raw Materials,Latin America,22.22,79,26,6,27.7,Healthy,0.92,1755.38
+SKU-0127,BlueLine Industrial,Packaging,Europe,25.95,1077,37,67,22.7,Healthy,0.87,27948.15
+SKU-0128,Global Metals Ltd,Packaging,Asia-Pacific,45.0,592,3,11,6.8,Stockout Risk,0.71,26640.0
+SKU-0129,Keystone Materials,Components,Europe,24.21,189,14,2,3.9,Stockout Risk,0.77,4575.69
+SKU-0130,Apex Manufacturing,Components,Latin America,8.3,716,3,55,28.0,Healthy,0.93,5942.8
+SKU-0131,LumenTech,Finished Goods,North America,8.51,812,15,56,25.2,Healthy,0.86,6910.12
+SKU-0132,Innovate Supply,Finished Goods,Latin America,53.9,283,23,6,7.7,Healthy,0.94,15253.7
+SKU-0133,Standard Industrial,Finished Goods,North America,10.73,2471,28,382,56.4,Overstocked,0.82,26513.83
+SKU-0134,Dynamic Parts Co,Finished Goods,Europe,50.88,69,32,1,5.3,Stockout Risk,0.81,3510.72
+SKU-0135,Titan Manufacturing,Finished Goods,North America,23.99,106,24,19,65.4,Overstocked,0.97,2542.94
+SKU-0136,Dynamic Parts Co,Consumables,Latin America,58.1,256,27,19,27.1,Healthy,0.79,14873.6
+SKU-0137,Meridian Parts,Finished Goods,Latin America,26.35,112,10,30,97.8,Severely Overstocked,0.92,2951.2
+SKU-0138,UnionTech Supply,Consumables,North America,18.53,253,29,42,60.6,Overstocked,0.66,4688.09
+SKU-0139,Northstar Industrial,Consumables,Europe,13.01,296,23,9,11.1,Healthy,0.88,3850.96
+SKU-0140,Innovate Supply,Raw Materials,Latin America,22.99,609,3,114,68.3,Overstocked,0.78,14000.91
+SKU-0141,Apex Manufacturing,Consumables,Europe,26.23,982,21,267,99.2,Severely Overstocked,0.98,25757.86
+SKU-0142,Meridian Parts,Packaging,North America,10.14,242,3,21,31.7,Overstocked,0.93,2453.88
+SKU-0143,LumenTech,Consumables,Asia-Pacific,97.47,239,16,14,21.4,Healthy,0.89,23295.33
+SKU-0144,Dynamic Parts Co,Finished Goods,Asia-Pacific,7.02,58,8,6,37.8,Overstocked,0.77,407.16
+SKU-0145,Omega Components,Finished Goods,Latin America,19.12,792,9,303,139.6,Severely Overstocked,0.78,15143.04
+SKU-0146,Keystone Materials,Consumables,Europe,101.61,83,21,2,8.8,Healthy,0.67,8433.63
+SKU-0147,Global Metals Ltd,Packaging,Latin America,10.62,1324,35,116,32.0,Overstocked,0.77,14060.88
+SKU-0148,FrontierLogistics,Consumables,Asia-Pacific,13.78,199,13,19,34.8,Overstocked,0.99,2742.22
+SKU-0149,Northstar Industrial,Consumables,North America,10.88,273,23,29,38.8,Overstocked,0.85,2970.24
+SKU-0150,Keystone Materials,Finished Goods,Europe,22.3,70,8,2,10.4,Healthy,0.79,1561.0
+SKU-0151,Omega Components,Consumables,Asia-Pacific,11.97,504,20,46,33.3,Overstocked,0.78,6032.88
+SKU-0152,Pinnacle Supply,Packaging,Latin America,28.31,1516,9,119,28.7,Healthy,0.94,42917.96
+SKU-0153,Global Metals Ltd,Consumables,Latin America,36.26,1222,29,135,40.3,Overstocked,0.8,44309.72
+SKU-0154,FrontierLogistics,Raw Materials,Asia-Pacific,92.92,210,25,51,88.6,Overstocked,0.91,19513.2
+SKU-0155,Regional Supply Co,Consumables,Asia-Pacific,67.12,178,24,28,57.4,Overstocked,0.79,11947.36
+SKU-0156,CoreTech Supply,Components,Asia-Pacific,20.15,913,6,316,126.3,Severely Overstocked,0.99,18396.95
+SKU-0157,Heritage Industrial,Components,Europe,38.3,3509,17,600,62.4,Overstocked,0.96,134394.7
+SKU-0158,Apex Manufacturing,Raw Materials,Europe,21.07,1351,6,325,87.8,Overstocked,0.93,28465.57
+SKU-0159,Quality Metals,Consumables,North America,58.77,144,22,3,7.6,Healthy,0.81,8462.88
+SKU-0160,Pinnacle Supply,Packaging,Europe,22.82,582,15,23,14.4,Healthy,0.96,13281.24
+SKU-0161,Northstar Industrial,Packaging,Latin America,11.53,2646,6,0,0.0,Stockout Risk,0.92,30508.38
+SKU-0162,Heritage Industrial,Components,North America,53.91,1238,34,68,20.0,Healthy,0.93,66740.58
+SKU-0163,Dynamic Parts Co,Packaging,Europe,127.31,138,5,49,129.6,Severely Overstocked,0.82,17568.78
+SKU-0164,FrontierLogistics,Consumables,Latin America,16.34,198,14,0,0.0,Stockout Risk,0.97,3235.32
+SKU-0165,BlueLine Industrial,Consumables,Europe,18.5,1233,24,217,64.2,Overstocked,0.9,22810.5
+SKU-0166,Dynamic Parts Co,Packaging,Europe,36.87,156,24,1,2.3,Stockout Risk,0.82,5751.72
+SKU-0167,Pinnacle Supply,Consumables,Asia-Pacific,18.36,1702,14,134,28.7,Healthy,0.92,31248.72
+SKU-0168,Pinnacle Supply,Consumables,Latin America,19.8,82,26,12,53.4,Overstocked,0.87,1623.6
+SKU-0169,Standard Industrial,Packaging,Europe,12.78,50,5,5,36.5,Overstocked,0.89,639.0
+SKU-0170,Quality Metals,Packaging,Asia-Pacific,32.42,393,15,9,8.4,Healthy,0.77,12741.06
+SKU-0171,Heritage Industrial,Finished Goods,Latin America,90.32,970,18,40,15.1,Healthy,0.89,87610.4
+SKU-0172,Heritage Industrial,Finished Goods,Latin America,20.86,308,20,1,1.2,Stockout Risk,0.92,6424.88
+SKU-0173,CoreTech Supply,Finished Goods,Europe,121.23,765,15,41,19.6,Healthy,0.96,92740.95
+SKU-0174,Innovate Supply,Finished Goods,Asia-Pacific,9.04,2470,24,663,98.0,Severely Overstocked,0.88,22328.8
+SKU-0175,Standard Industrial,Raw Materials,Europe,57.37,236,34,16,24.7,Healthy,0.89,13539.32
+SKU-0176,Eastern Components,Components,Latin America,178.13,278,23,3,3.9,Stockout Risk,0.8,49520.14
+SKU-0177,Eastern Components,Components,North America,14.58,616,26,54,32.0,Overstocked,0.97,8981.28
+SKU-0178,Omega Components,Packaging,Asia-Pacific,18.24,158,28,59,136.3,Severely Overstocked,0.73,2881.92
+SKU-0179,Standard Industrial,Packaging,Latin America,37.1,145,18,19,47.8,Overstocked,0.92,5379.5
+SKU-0180,BlueLine Industrial,Components,Latin America,48.09,62,11,4,23.5,Healthy,0.93,2981.58
+SKU-0181,Northstar Industrial,Consumables,North America,108.19,254,31,63,90.5,Severely Overstocked,0.81,27480.26
+SKU-0182,Titan Manufacturing,Packaging,Latin America,11.33,898,22,65,26.4,Healthy,0.98,10174.34
+SKU-0183,Apex Manufacturing,Finished Goods,Asia-Pacific,10.74,599,25,28,17.1,Healthy,0.94,6433.26
+SKU-0184,Northstar Industrial,Packaging,Europe,15.01,77,20,20,94.8,Severely Overstocked,0.75,1155.77
+SKU-0185,Quality Metals,Components,Asia-Pacific,63.36,70,17,24,125.1,Severely Overstocked,0.87,4435.2
+SKU-0186,Omega Components,Packaging,North America,5.78,1221,13,29,8.7,Healthy,0.74,7057.38
+SKU-0187,Northstar Industrial,Finished Goods,Latin America,21.69,111,30,6,19.7,Healthy,0.92,2407.59
+SKU-0188,FrontierLogistics,Packaging,Europe,5.0,174,26,6,12.6,Healthy,1.0,870.0
+SKU-0189,UnionTech Supply,Consumables,North America,29.43,620,31,28,16.5,Healthy,0.66,18246.6
+SKU-0190,Northstar Industrial,Consumables,North America,11.58,423,14,112,96.6,Severely Overstocked,0.89,4898.34
+SKU-0191,CoreTech Supply,Packaging,Europe,21.73,54,30,3,20.3,Healthy,0.84,1173.42
+SKU-0192,Pinnacle Supply,Components,North America,379.08,168,25,5,10.9,Healthy,0.91,63685.44
+SKU-0193,Innovate Supply,Packaging,Asia-Pacific,37.07,140,14,28,73.0,Overstocked,0.88,5189.8
+SKU-0194,Global Metals Ltd,Packaging,Asia-Pacific,8.03,391,41,40,37.3,Overstocked,0.8,3139.73
+SKU-0195,LumenTech,Packaging,Asia-Pacific,60.67,1322,27,56,15.5,Healthy,0.9,80205.74
+SKU-0196,Omega Components,Finished Goods,North America,27.02,1102,18,220,72.9,Overstocked,0.74,29776.04
+SKU-0197,Quality Metals,Raw Materials,North America,15.73,1057,32,149,51.5,Overstocked,0.87,16626.61
+SKU-0198,Meridian Parts,Components,North America,37.92,1465,18,31,7.7,Healthy,0.86,55552.8
+SKU-0199,BlueLine Industrial,Raw Materials,Europe,6.71,95,36,4,15.4,Healthy,0.8,637.45
+SKU-0200,Global Metals Ltd,Raw Materials,Europe,14.83,110,14,6,19.9,Healthy,0.8,1631.3
+SKU-0201,Heritage Industrial,Components,Latin America,10.09,3836,30,229,21.8,Healthy,0.91,38705.24
+SKU-0202,Dynamic Parts Co,Consumables,Europe,19.69,126,5,11,31.9,Overstocked,0.9,2480.94
+SKU-0203,Pinnacle Supply,Finished Goods,Asia-Pacific,80.18,709,26,278,143.1,Severely Overstocked,0.95,56847.62
+SKU-0204,FrontierLogistics,Consumables,North America,29.73,333,26,0,0.0,Stockout Risk,0.9,9900.09
+SKU-0205,FrontierLogistics,Finished Goods,North America,7.47,133,22,9,24.7,Healthy,0.98,993.51
+SKU-0206,Titan Manufacturing,Raw Materials,Asia-Pacific,43.51,220,5,8,13.3,Healthy,0.86,9572.2
+SKU-0207,Titan Manufacturing,Packaging,Latin America,22.32,106,14,7,24.1,Healthy,0.98,2365.92
+SKU-0208,Global Metals Ltd,Raw Materials,Europe,18.63,226,21,23,37.1,Overstocked,0.78,4210.38
+SKU-0209,Dynamic Parts Co,Finished Goods,North America,21.09,420,13,36,31.3,Overstocked,0.84,8857.8
+SKU-0210,Titan Manufacturing,Raw Materials,Asia-Pacific,14.87,306,28,8,9.5,Healthy,0.95,4550.22
+SKU-0211,Standard Industrial,Packaging,Asia-Pacific,14.96,1404,14,148,38.5,Overstocked,0.98,21003.84
+SKU-0212,CoreTech Supply,Consumables,Asia-Pacific,5.83,681,13,110,59.0,Overstocked,0.94,3970.23
+SKU-0213,Apex Manufacturing,Packaging,Latin America,20.99,348,30,30,31.5,Overstocked,0.99,7304.52
+SKU-0214,Dynamic Parts Co,Packaging,Asia-Pacific,5.0,552,20,4,2.6,Stockout Risk,0.86,2760.0
+SKU-0215,Pinnacle Supply,Components,Latin America,107.52,231,26,17,26.9,Healthy,0.9,24837.12
+SKU-0216,FrontierLogistics,Consumables,Asia-Pacific,9.86,224,19,16,26.1,Healthy,0.82,2208.64
+SKU-0217,UnionTech Supply,Consumables,Latin America,27.96,928,3,45,17.7,Healthy,0.71,25946.88
+SKU-0218,Pinnacle Supply,Packaging,Asia-Pacific,140.69,310,38,11,13.0,Healthy,0.96,43613.9
+SKU-0219,LumenTech,Components,North America,34.42,160,22,0,0.0,Stockout Risk,1.0,5507.2
+SKU-0220,Innovate Supply,Packaging,Europe,14.78,1501,8,216,52.5,Overstocked,0.83,22184.78
+SKU-0221,Pinnacle Supply,Consumables,Latin America,67.57,464,44,15,11.8,Healthy,0.93,31352.48
+SKU-0222,LumenTech,Raw Materials,Latin America,28.84,667,26,55,30.1,Overstocked,0.87,19236.28
+SKU-0223,LumenTech,Components,Latin America,5.0,670,9,36,19.6,Healthy,0.98,3350.0
+SKU-0224,Global Metals Ltd,Finished Goods,Asia-Pacific,20.72,518,20,87,61.3,Overstocked,0.75,10732.96
+SKU-0225,LumenTech,Finished Goods,Asia-Pacific,50.35,301,23,52,63.1,Overstocked,0.91,15155.35
+SKU-0226,Standard Industrial,Raw Materials,Europe,15.86,122,17,12,35.9,Overstocked,0.87,1934.92
+SKU-0227,CoreTech Supply,Components,Latin America,59.5,648,20,75,42.2,Overstocked,0.92,38556.0
+SKU-0228,Quality Metals,Consumables,Europe,34.11,50,21,0,0.0,Stockout Risk,0.82,1705.5
+SKU-0229,Quality Metals,Packaging,Latin America,21.26,685,20,35,18.6,Healthy,0.69,14563.1
+SKU-0230,Apex Manufacturing,Raw Materials,Asia-Pacific,26.93,535,13,39,26.6,Healthy,0.98,14407.55
+SKU-0231,Heritage Industrial,Packaging,Europe,16.23,1791,22,659,134.3,Severely Overstocked,0.9,29067.93
+SKU-0232,Keystone Materials,Consumables,Asia-Pacific,13.32,279,13,4,5.2,Stockout Risk,0.71,3716.28
+SKU-0233,Quality Metals,Consumables,Asia-Pacific,23.58,404,25,26,23.5,Healthy,0.85,9526.32
+SKU-0234,Omega Components,Consumables,Asia-Pacific,198.08,142,18,31,79.7,Overstocked,0.71,28127.36
+SKU-0235,Meridian Parts,Packaging,Asia-Pacific,6.23,66,26,12,66.4,Overstocked,0.86,411.18
+SKU-0236,Keystone Materials,Finished Goods,Europe,16.87,272,20,8,10.7,Healthy,0.72,4588.64
+SKU-0237,Dynamic Parts Co,Components,Asia-Pacific,5.0,484,20,17,12.8,Healthy,0.68,2420.0
+SKU-0238,Dynamic Parts Co,Consumables,Europe,157.68,122,20,4,12.0,Healthy,0.87,19236.96
+SKU-0239,Global Metals Ltd,Components,Latin America,5.09,80,35,19,86.7,Overstocked,0.81,407.2
+SKU-0240,Innovate Supply,Consumables,Asia-Pacific,6.55,81,16,17,76.6,Overstocked,0.82,530.55
+SKU-0241,Dynamic Parts Co,Components,Asia-Pacific,42.19,544,34,31,20.8,Healthy,0.72,22951.36
+SKU-0242,Heritage Industrial,Finished Goods,Europe,21.38,440,38,40,33.2,Overstocked,0.94,9407.2
+SKU-0243,Keystone Materials,Raw Materials,Europe,5.22,152,33,13,31.2,Overstocked,0.68,793.44
+SKU-0244,Innovate Supply,Raw Materials,North America,12.99,535,13,100,68.2,Overstocked,0.81,6949.65
+SKU-0245,Standard Industrial,Finished Goods,Europe,5.0,1810,17,171,34.5,Overstocked,0.9,9050.0
+SKU-0246,Quality Metals,Raw Materials,North America,68.35,225,21,81,131.4,Severely Overstocked,0.88,15378.75
+SKU-0247,Titan Manufacturing,Finished Goods,Latin America,21.26,527,36,93,64.4,Overstocked,0.87,11204.02
+SKU-0248,Quality Metals,Packaging,Asia-Pacific,28.77,704,18,14,7.3,Healthy,0.73,20254.08
+SKU-0249,FrontierLogistics,Raw Materials,Asia-Pacific,156.99,133,18,32,87.8,Overstocked,0.83,20879.67
+SKU-0250,Quality Metals,Raw Materials,North America,50.05,546,23,89,59.5,Overstocked,0.84,27327.3
+SKU-0251,Northstar Industrial,Packaging,North America,15.66,2012,25,366,66.4,Overstocked,0.84,31507.92
+SKU-0252,Titan Manufacturing,Raw Materials,Europe,33.21,559,21,144,94.0,Severely Overstocked,0.88,18564.39
+SKU-0253,Eastern Components,Consumables,Asia-Pacific,11.84,725,33,72,36.2,Overstocked,0.94,8584.0
+SKU-0254,CoreTech Supply,Components,North America,58.88,60,21,4,24.3,Healthy,0.97,3532.8
+SKU-0255,Standard Industrial,Packaging,Europe,72.95,790,19,0,0.0,Stockout Risk,0.91,57630.5
+SKU-0256,Regional Supply Co,Packaging,Latin America,7.95,1462,16,111,27.7,Healthy,0.82,11622.9
+SKU-0257,Pinnacle Supply,Finished Goods,Latin America,6.07,629,32,33,19.1,Healthy,0.89,3818.03
+SKU-0258,Keystone Materials,Consumables,North America,6.64,256,12,73,104.1,Severely Overstocked,0.68,1699.84
+SKU-0259,UnionTech Supply,Raw Materials,Europe,25.15,1025,6,64,22.8,Healthy,0.74,25778.75
+SKU-0260,Global Metals Ltd,Finished Goods,North America,11.32,483,12,26,19.6,Healthy,0.76,5467.56
+SKU-0261,FrontierLogistics,Components,Europe,93.89,2999,41,375,45.6,Overstocked,0.87,281576.11
+SKU-0262,Standard Industrial,Raw Materials,Europe,45.96,400,34,8,7.3,Healthy,0.85,18384.0
+SKU-0263,Apex Manufacturing,Packaging,Latin America,40.3,1048,21,102,35.5,Overstocked,0.9,42234.4
+SKU-0264,UnionTech Supply,Packaging,Asia-Pacific,8.28,173,19,12,25.3,Healthy,0.71,1432.44
+SKU-0265,BlueLine Industrial,Components,Asia-Pacific,7.21,2576,33,95,13.5,Healthy,0.94,18572.96
+SKU-0266,Keystone Materials,Packaging,North America,14.82,1337,3,75,20.5,Healthy,0.64,19814.34
+SKU-0267,Heritage Industrial,Finished Goods,Europe,23.12,68,24,2,10.7,Healthy,0.98,1572.16
+SKU-0268,Omega Components,Raw Materials,Europe,16.53,278,25,39,51.2,Overstocked,0.58,4595.34
+SKU-0269,Eastern Components,Finished Goods,Europe,19.54,2373,37,372,57.2,Overstocked,0.84,46368.42
+SKU-0270,CoreTech Supply,Raw Materials,Europe,6.7,599,15,58,35.3,Overstocked,0.94,4013.3
+SKU-0271,Keystone Materials,Consumables,Asia-Pacific,8.35,176,18,8,16.6,Healthy,0.68,1469.6
+SKU-0272,Pinnacle Supply,Raw Materials,Latin America,96.36,238,20,0,0.0,Stockout Risk,1.0,22933.68
+SKU-0273,Keystone Materials,Packaging,Asia-Pacific,41.97,304,21,79,94.9,Severely Overstocked,0.69,12758.88
+SKU-0274,Regional Supply Co,Consumables,Latin America,10.98,977,11,382,142.7,Severely Overstocked,0.74,10727.46
+SKU-0275,Pinnacle Supply,Raw Materials,North America,26.94,103,25,10,35.4,Overstocked,0.92,2774.82
+SKU-0276,Omega Components,Finished Goods,Asia-Pacific,14.65,263,15,12,16.7,Healthy,0.78,3852.95
+SKU-0277,Apex Manufacturing,Raw Materials,Europe,7.27,429,25,16,13.6,Healthy,0.94,3118.83
+SKU-0278,Titan Manufacturing,Consumables,North America,122.92,371,12,28,27.5,Healthy,0.96,45603.32
+SKU-0279,Innovate Supply,Consumables,North America,5.0,146,27,9,22.5,Healthy,0.92,730.0
+SKU-0280,FrontierLogistics,Packaging,Latin America,21.26,211,20,32,55.4,Overstocked,0.86,4485.86
+SKU-0281,Innovate Supply,Components,Latin America,12.39,155,22,11,25.9,Healthy,0.83,1920.45
+SKU-0282,Quality Metals,Raw Materials,Latin America,33.5,554,20,102,67.2,Overstocked,0.83,18559.0
+SKU-0283,Meridian Parts,Packaging,Asia-Pacific,16.77,9829,23,1484,55.1,Overstocked,0.93,164832.33
+SKU-0284,LumenTech,Raw Materials,Europe,11.38,64,23,13,74.1,Overstocked,0.99,728.32
+SKU-0285,LumenTech,Packaging,Latin America,12.84,1452,21,86,21.6,Healthy,0.99,18643.68
+SKU-0286,Keystone Materials,Packaging,North America,38.72,928,16,225,88.5,Overstocked,0.68,35932.16
+SKU-0287,Pinnacle Supply,Raw Materials,Asia-Pacific,7.73,616,41,1,0.6,Stockout Risk,0.97,4761.68
+SKU-0288,Innovate Supply,Finished Goods,North America,25.57,679,21,30,16.1,Healthy,0.87,17362.03
+SKU-0289,Northstar Industrial,Consumables,North America,16.66,1081,32,166,56.0,Overstocked,0.85,18009.46
+SKU-0290,Standard Industrial,Packaging,Latin America,36.47,528,24,24,16.6,Healthy,0.93,19256.16
+SKU-0291,BlueLine Industrial,Components,Asia-Pacific,74.97,358,3,19,19.4,Healthy,0.86,26839.26
+SKU-0292,UnionTech Supply,Packaging,Latin America,54.2,696,12,112,58.7,Overstocked,0.66,37723.2
+SKU-0293,BlueLine Industrial,Components,Asia-Pacific,13.58,160,37,14,31.9,Overstocked,0.8,2172.8
+SKU-0294,Standard Industrial,Components,Asia-Pacific,69.68,363,33,129,129.7,Severely Overstocked,0.89,25293.84
+SKU-0295,Pinnacle Supply,Packaging,North America,6.18,1323,16,60,16.6,Healthy,0.94,8176.14
+SKU-0296,Apex Manufacturing,Consumables,Europe,33.93,242,28,24,36.2,Overstocked,1.0,8211.06
+SKU-0297,FrontierLogistics,Finished Goods,North America,7.39,204,26,51,91.2,Severely Overstocked,0.94,1507.56
+SKU-0298,Standard Industrial,Packaging,North America,39.15,120,29,31,94.3,Severely Overstocked,0.96,4698.0
+SKU-0299,Heritage Industrial,Raw Materials,Latin America,17.59,152,32,9,21.6,Healthy,0.94,2673.68
+SKU-0300,Dynamic Parts Co,Components,Latin America,18.85,334,11,5,5.5,Stockout Risk,0.79,6295.9
+SKU-0301,Keystone Materials,Consumables,Asia-Pacific,40.83,260,26,41,57.6,Overstocked,0.74,10615.8
+SKU-0302,Omega Components,Packaging,Latin America,11.86,780,17,25,11.7,Healthy,0.81,9250.8
+SKU-0303,Heritage Industrial,Packaging,Europe,16.06,284,20,10,12.9,Healthy,0.85,4561.04
+SKU-0304,Northstar Industrial,Components,Europe,43.78,1152,12,32,10.1,Healthy,0.98,50434.56
+SKU-0305,CoreTech Supply,Finished Goods,Latin America,18.09,340,21,16,17.2,Healthy,0.97,6150.6
+SKU-0306,LumenTech,Consumables,Asia-Pacific,64.3,525,27,89,61.9,Overstocked,0.99,33757.5
+SKU-0307,Apex Manufacturing,Finished Goods,Asia-Pacific,5.0,794,14,102,46.9,Overstocked,0.96,3970.0
+SKU-0308,Titan Manufacturing,Consumables,Latin America,25.28,3311,9,444,48.9,Overstocked,0.95,83702.08
+SKU-0309,Eastern Components,Packaging,Latin America,21.66,81,18,3,13.5,Healthy,0.84,1754.46
+SKU-0310,Meridian Parts,Finished Goods,Latin America,23.18,1770,27,95,19.6,Healthy,0.87,41028.6
+SKU-0311,Pinnacle Supply,Finished Goods,Europe,9.56,107,14,2,6.8,Stockout Risk,0.95,1022.92
+SKU-0312,Heritage Industrial,Consumables,Latin America,5.0,633,8,27,15.6,Healthy,0.86,3165.0
+SKU-0313,Heritage Industrial,Packaging,North America,14.74,190,24,17,32.7,Overstocked,0.95,2800.6
+SKU-0314,LumenTech,Packaging,Latin America,16.77,185,19,17,33.5,Overstocked,0.9,3102.45
+SKU-0315,Northstar Industrial,Components,Latin America,58.91,412,40,153,135.5,Severely Overstocked,0.87,24270.92
+SKU-0316,BlueLine Industrial,Components,Asia-Pacific,10.46,101,3,7,25.3,Healthy,0.91,1056.46
+SKU-0317,Dynamic Parts Co,Packaging,North America,5.0,987,16,44,16.3,Healthy,0.79,4935.0
+SKU-0318,Regional Supply Co,Packaging,North America,10.86,198,24,4,7.4,Healthy,0.76,2150.28
+SKU-0319,Eastern Components,Packaging,Europe,16.26,150,19,3,7.3,Healthy,0.85,2439.0
+SKU-0320,CoreTech Supply,Packaging,Asia-Pacific,16.97,1375,32,88,23.4,Healthy,0.95,23333.75
+SKU-0321,LumenTech,Consumables,Latin America,40.78,509,30,53,38.0,Overstocked,0.94,20757.02
+SKU-0322,CoreTech Supply,Finished Goods,Latin America,9.54,73,14,4,20.0,Healthy,0.95,696.42
+SKU-0323,LumenTech,Packaging,North America,23.57,144,33,11,27.9,Healthy,0.96,3394.08
+SKU-0324,UnionTech Supply,Raw Materials,Europe,46.79,2540,13,158,22.7,Healthy,0.65,118846.6
+SKU-0325,Keystone Materials,Components,North America,80.84,314,23,80,93.0,Severely Overstocked,0.61,25383.76
+SKU-0326,Omega Components,Raw Materials,North America,10.04,64,32,7,39.9,Overstocked,0.78,642.56
+SKU-0327,Pinnacle Supply,Components,Asia-Pacific,6.75,267,9,65,88.9,Overstocked,0.91,1802.25
+SKU-0328,Apex Manufacturing,Raw Materials,Asia-Pacific,13.06,423,19,37,31.9,Overstocked,0.91,5524.38
+SKU-0329,BlueLine Industrial,Finished Goods,Asia-Pacific,5.0,180,30,18,36.5,Overstocked,0.97,900.0
+SKU-0330,Meridian Parts,Packaging,Europe,12.65,385,9,7,6.6,Stockout Risk,0.86,4870.25
+SKU-0331,Heritage Industrial,Consumables,Latin America,12.98,361,20,12,12.1,Healthy,0.84,4685.78
+SKU-0332,Titan Manufacturing,Components,Europe,14.08,367,23,100,99.5,Severely Overstocked,0.93,5167.36
+SKU-0333,FrontierLogistics,Raw Materials,Latin America,18.04,631,5,27,15.6,Healthy,0.91,11383.24
+SKU-0334,UnionTech Supply,Components,Latin America,6.17,1944,23,251,47.1,Overstocked,0.65,11994.48
+SKU-0335,Titan Manufacturing,Components,Europe,9.14,216,19,6,10.1,Healthy,0.91,1974.24
+SKU-0336,Pinnacle Supply,Finished Goods,Latin America,32.92,1055,3,71,24.6,Healthy,0.91,34730.6
+SKU-0337,Innovate Supply,Raw Materials,Latin America,5.0,303,32,42,50.6,Overstocked,0.83,1515.0
+SKU-0338,Keystone Materials,Consumables,Europe,5.61,391,15,28,26.1,Healthy,0.72,2193.51
+SKU-0339,CoreTech Supply,Packaging,Asia-Pacific,59.49,444,24,7,5.8,Stockout Risk,0.92,26413.56
+SKU-0340,Titan Manufacturing,Finished Goods,Latin America,48.09,356,9,141,144.6,Severely Overstocked,0.91,17120.04
+SKU-0341,Innovate Supply,Packaging,Asia-Pacific,5.0,1424,11,217,55.6,Overstocked,0.86,7120.0
+SKU-0342,Global Metals Ltd,Packaging,Latin America,5.0,6099,18,1009,60.4,Overstocked,0.76,30495.0
+SKU-0343,Dynamic Parts Co,Components,Latin America,33.82,769,26,33,15.7,Healthy,0.84,26007.58
+SKU-0344,Titan Manufacturing,Finished Goods,Asia-Pacific,16.37,352,31,28,29.0,Healthy,0.92,5762.24
+SKU-0345,Keystone Materials,Raw Materials,Latin America,19.71,273,32,32,42.8,Overstocked,0.68,5380.83
+SKU-0346,Innovate Supply,Raw Materials,North America,9.52,1268,15,78,22.5,Healthy,0.88,12071.36
+SKU-0347,UnionTech Supply,Packaging,Asia-Pacific,41.48,675,14,118,63.8,Overstocked,0.71,27999.0
+SKU-0348,Heritage Industrial,Consumables,Asia-Pacific,65.53,723,25,71,35.8,Overstocked,0.89,47378.19
+SKU-0349,Heritage Industrial,Components,Asia-Pacific,17.06,191,14,7,13.4,Healthy,0.94,3258.46
+SKU-0350,Eastern Components,Raw Materials,North America,17.55,415,27,17,15.0,Healthy,0.78,7283.25
+SKU-0351,Keystone Materials,Packaging,North America,38.83,1030,4,26,9.2,Healthy,0.74,39994.9
+SKU-0352,Titan Manufacturing,Finished Goods,Europe,10.7,345,28,84,88.9,Overstocked,0.81,3691.5
+SKU-0353,CoreTech Supply,Finished Goods,Asia-Pacific,37.92,116,21,8,25.2,Healthy,0.91,4398.72
+SKU-0354,Omega Components,Components,Europe,28.08,406,31,42,37.8,Overstocked,0.78,11400.48
+SKU-0355,Eastern Components,Consumables,Asia-Pacific,24.77,246,29,36,53.4,Overstocked,0.83,6093.42
+SKU-0356,Regional Supply Co,Consumables,Asia-Pacific,79.02,127,21,21,60.4,Overstocked,0.71,10035.54
+SKU-0357,FrontierLogistics,Finished Goods,Latin America,10.03,267,15,27,36.9,Overstocked,0.87,2678.01
+SKU-0358,Keystone Materials,Finished Goods,North America,20.4,1048,10,44,15.3,Healthy,0.66,21379.2
+SKU-0359,Pinnacle Supply,Raw Materials,Europe,10.4,297,7,44,54.1,Overstocked,1.0,3088.8
+SKU-0360,Heritage Industrial,Packaging,Asia-Pacific,10.34,343,30,88,93.6,Severely Overstocked,0.92,3546.62
+SKU-0361,CoreTech Supply,Packaging,North America,26.19,225,3,21,34.1,Overstocked,0.98,5892.75
+SKU-0362,Innovate Supply,Consumables,North America,8.88,488,21,82,61.3,Overstocked,0.86,4333.44
+SKU-0363,Pinnacle Supply,Finished Goods,Asia-Pacific,10.83,294,27,9,11.2,Healthy,0.98,3184.02
+SKU-0364,Titan Manufacturing,Packaging,Asia-Pacific,17.73,50,21,2,14.6,Healthy,0.85,886.5
+SKU-0365,Dynamic Parts Co,Components,Latin America,12.08,348,16,68,71.3,Overstocked,0.76,4203.84
+SKU-0366,Apex Manufacturing,Consumables,Asia-Pacific,32.54,278,42,73,95.8,Severely Overstocked,0.87,9046.12
+SKU-0367,UnionTech Supply,Components,North America,5.0,914,24,74,29.6,Healthy,0.73,4570.0
+SKU-0368,Pinnacle Supply,Finished Goods,Latin America,5.11,1896,13,66,12.7,Healthy,0.99,9688.56
+SKU-0369,Dynamic Parts Co,Components,North America,11.66,342,21,7,7.5,Healthy,0.7,3987.72
+SKU-0370,BlueLine Industrial,Finished Goods,Latin America,6.46,324,3,37,41.7,Overstocked,0.92,2093.04
+SKU-0371,Dynamic Parts Co,Raw Materials,Europe,19.7,310,21,34,40.0,Overstocked,0.83,6107.0
+SKU-0372,Standard Industrial,Components,Latin America,9.74,455,36,177,142.0,Severely Overstocked,0.9,4431.7
+SKU-0373,Pinnacle Supply,Finished Goods,Latin America,14.1,227,22,16,25.7,Healthy,1.0,3200.7
+SKU-0374,Titan Manufacturing,Components,Latin America,5.2,788,27,26,12.0,Healthy,0.87,4097.6
+SKU-0375,Dynamic Parts Co,Packaging,Latin America,18.12,78,19,4,18.7,Healthy,0.81,1413.36
+SKU-0376,Innovate Supply,Raw Materials,Asia-Pacific,21.15,328,14,11,12.2,Healthy,0.83,6937.2
+SKU-0377,Global Metals Ltd,Packaging,Latin America,72.36,704,9,120,62.2,Overstocked,0.69,50941.44
+SKU-0378,Heritage Industrial,Finished Goods,North America,97.33,125,29,4,11.7,Healthy,0.95,12166.25
+SKU-0379,Meridian Parts,Consumables,Asia-Pacific,53.91,373,17,10,9.8,Healthy,0.81,20108.43
+SKU-0380,BlueLine Industrial,Packaging,Asia-Pacific,17.19,418,26,35,30.6,Overstocked,0.88,7185.42
+SKU-0381,Global Metals Ltd,Raw Materials,Latin America,16.61,282,19,26,33.7,Overstocked,0.72,4684.02
+SKU-0382,CoreTech Supply,Components,North America,18.49,330,8,10,11.1,Healthy,0.98,6101.7
+SKU-0383,BlueLine Industrial,Finished Goods,Europe,5.0,640,41,0,0.0,Stockout Risk,0.89,3200.0
+SKU-0384,Eastern Components,Consumables,Europe,20.93,698,15,180,94.1,Severely Overstocked,0.82,14609.14
+SKU-0385,CoreTech Supply,Consumables,Europe,10.58,657,39,24,13.3,Healthy,1.0,6951.06
+SKU-0386,Titan Manufacturing,Components,Europe,65.06,508,8,81,58.2,Overstocked,0.91,33050.48
+SKU-0387,LumenTech,Components,North America,5.75,738,29,66,32.6,Overstocked,0.93,4243.5
+SKU-0388,Innovate Supply,Components,Europe,8.39,395,16,36,33.3,Overstocked,0.82,3314.05
+SKU-0389,Standard Industrial,Finished Goods,Europe,42.27,336,14,31,33.7,Overstocked,0.88,14202.72
+SKU-0390,Dynamic Parts Co,Raw Materials,Europe,23.35,446,26,23,18.8,Healthy,0.82,10414.1
+SKU-0391,Apex Manufacturing,Finished Goods,Europe,5.0,984,8,55,20.4,Healthy,0.84,4920.0
+SKU-0392,Titan Manufacturing,Finished Goods,North America,20.75,499,19,21,15.4,Healthy,0.94,10354.25
+SKU-0393,FrontierLogistics,Finished Goods,North America,144.96,84,37,3,13.0,Healthy,0.94,12176.64
+SKU-0394,Eastern Components,Packaging,North America,15.02,1654,16,60,13.2,Healthy,0.82,24843.08
+SKU-0395,CoreTech Supply,Packaging,Latin America,5.74,580,29,19,12.0,Healthy,0.95,3329.2
+SKU-0396,Meridian Parts,Consumables,North America,40.84,1430,17,275,70.2,Overstocked,0.81,58401.2
+SKU-0397,Pinnacle Supply,Consumables,Europe,39.65,1329,3,97,26.6,Healthy,0.99,52694.85
+SKU-0398,UnionTech Supply,Raw Materials,Asia-Pacific,5.0,194,10,10,18.8,Healthy,0.62,970.0
+SKU-0399,Pinnacle Supply,Raw Materials,North America,39.11,640,3,17,9.7,Healthy,1.0,25030.4
+SKU-0400,Quality Metals,Packaging,Latin America,35.86,254,9,60,86.2,Overstocked,0.9,9108.44
+SKU-0401,Dynamic Parts Co,Packaging,Latin America,114.31,1073,21,89,30.3,Overstocked,0.8,122654.63
+SKU-0402,CoreTech Supply,Raw Materials,Asia-Pacific,11.37,712,22,15,7.7,Healthy,0.87,8095.44
+SKU-0403,UnionTech Supply,Components,North America,57.51,148,17,10,24.7,Healthy,0.56,8511.48
+SKU-0404,Eastern Components,Finished Goods,Asia-Pacific,23.5,1190,30,85,26.1,Healthy,0.84,27965.0
+SKU-0405,Northstar Industrial,Consumables,Asia-Pacific,39.09,614,29,17,10.1,Healthy,0.83,24001.26
+SKU-0406,Pinnacle Supply,Consumables,Latin America,5.92,1162,30,77,24.2,Healthy,0.99,6879.04
+SKU-0407,Dynamic Parts Co,Raw Materials,Europe,6.74,273,27,23,30.8,Overstocked,0.78,1840.02
+SKU-0408,Omega Components,Packaging,Europe,31.65,874,10,154,64.3,Overstocked,0.72,27662.1
+SKU-0409,Omega Components,Finished Goods,Latin America,20.23,208,27,10,17.5,Healthy,0.73,4207.84
+SKU-0410,Northstar Industrial,Packaging,North America,80.38,148,18,23,56.7,Overstocked,0.85,11896.24
+SKU-0411,LumenTech,Packaging,Asia-Pacific,40.18,272,31,14,18.8,Healthy,1.0,10928.96
+SKU-0412,Innovate Supply,Finished Goods,Europe,139.03,432,14,8,6.8,Stockout Risk,0.78,60060.96
+SKU-0413,Quality Metals,Raw Materials,North America,5.0,1227,14,69,20.5,Healthy,0.79,6135.0
+SKU-0414,CoreTech Supply,Raw Materials,Latin America,51.01,2473,14,95,14.0,Healthy,0.92,126147.73
+SKU-0415,Dynamic Parts Co,Finished Goods,Europe,23.57,666,32,47,25.8,Healthy,0.86,15697.62
+SKU-0416,Standard Industrial,Raw Materials,Asia-Pacific,12.25,300,15,14,17.0,Healthy,0.87,3675.0
+SKU-0417,Dynamic Parts Co,Packaging,Asia-Pacific,20.76,188,18,15,29.1,Healthy,0.75,3902.88
+SKU-0418,Omega Components,Raw Materials,Asia-Pacific,110.11,133,4,5,13.7,Healthy,0.65,14644.63
+SKU-0419,UnionTech Supply,Finished Goods,Asia-Pacific,7.99,147,23,14,34.8,Overstocked,0.68,1174.53
+SKU-0420,Dynamic Parts Co,Consumables,Europe,24.18,491,12,35,26.0,Healthy,0.82,11872.38
+SKU-0421,Eastern Components,Packaging,Europe,45.21,127,29,9,25.9,Healthy,0.85,5741.67
+SKU-0422,Dynamic Parts Co,Finished Goods,Asia-Pacific,5.0,325,23,28,31.4,Overstocked,0.84,1625.0
+SKU-0423,Dynamic Parts Co,Finished Goods,Europe,15.97,386,5,29,27.4,Healthy,0.77,6164.42
+SKU-0424,Omega Components,Consumables,North America,33.03,274,25,27,36.0,Overstocked,0.71,9050.22
+SKU-0425,UnionTech Supply,Finished Goods,North America,25.16,278,19,16,21.0,Healthy,0.76,6994.48
+SKU-0426,FrontierLogistics,Finished Goods,Asia-Pacific,12.27,409,20,29,25.9,Healthy,0.93,5018.43
+SKU-0427,LumenTech,Finished Goods,North America,12.15,525,23,49,34.1,Overstocked,0.91,6378.75
+SKU-0428,FrontierLogistics,Components,Latin America,8.41,2219,17,195,32.1,Overstocked,0.91,18661.79
+SKU-0429,CoreTech Supply,Components,North America,33.11,646,21,36,20.3,Healthy,1.0,21389.06
+SKU-0430,CoreTech Supply,Consumables,Europe,39.7,470,38,18,14.0,Healthy,0.94,18659.0
+SKU-0431,Northstar Industrial,Packaging,Latin America,58.73,4289,13,948,80.7,Overstocked,0.95,251892.97
+SKU-0432,LumenTech,Components,Asia-Pacific,38.14,3433,13,99,10.5,Healthy,1.0,130934.62
+SKU-0433,Keystone Materials,Finished Goods,North America,147.31,187,15,15,29.3,Healthy,0.67,27546.97
+SKU-0434,BlueLine Industrial,Components,Europe,20.17,891,20,13,5.3,Stockout Risk,0.95,17971.47
+SKU-0435,UnionTech Supply,Raw Materials,North America,5.72,909,18,17,6.8,Stockout Risk,0.71,5199.48
+SKU-0436,Innovate Supply,Packaging,Latin America,7.11,462,22,43,34.0,Overstocked,0.82,3284.82
+SKU-0437,Quality Metals,Consumables,Latin America,6.79,176,50,16,33.2,Overstocked,0.88,1195.04
+SKU-0438,Omega Components,Finished Goods,Europe,12.59,206,31,50,88.6,Overstocked,0.74,2593.54
+SKU-0439,Regional Supply Co,Raw Materials,Asia-Pacific,21.89,50,18,2,14.6,Healthy,0.73,1094.5
+SKU-0440,Omega Components,Raw Materials,Asia-Pacific,20.38,612,29,107,63.8,Overstocked,0.75,12472.56
+SKU-0441,Titan Manufacturing,Packaging,Asia-Pacific,157.05,130,25,2,5.6,Stockout Risk,0.86,20416.5
+SKU-0442,BlueLine Industrial,Components,Latin America,42.26,451,38,12,9.7,Healthy,0.82,19059.26
+SKU-0443,UnionTech Supply,Raw Materials,North America,16.17,296,45,15,18.5,Healthy,0.67,4786.32
+SKU-0444,Global Metals Ltd,Finished Goods,Europe,11.1,193,14,76,143.7,Severely Overstocked,0.85,2142.3
+SKU-0445,Eastern Components,Finished Goods,Asia-Pacific,5.0,61,39,6,35.9,Overstocked,0.82,305.0
+SKU-0446,LumenTech,Raw Materials,North America,5.49,1113,18,87,28.5,Healthy,0.94,6110.37
+SKU-0447,Quality Metals,Packaging,Europe,7.96,520,12,47,33.0,Overstocked,0.81,4139.2
+SKU-0448,Eastern Components,Packaging,Europe,5.56,353,22,21,21.7,Healthy,0.82,1962.68
+SKU-0449,Regional Supply Co,Consumables,Asia-Pacific,276.11,132,35,8,22.1,Healthy,0.86,36446.52
+SKU-0450,CoreTech Supply,Packaging,North America,22.92,579,24,51,32.2,Overstocked,0.92,13270.68
+SKU-0451,Omega Components,Raw Materials,Latin America,5.37,329,12,21,23.3,Healthy,0.71,1766.73
+SKU-0452,CoreTech Supply,Finished Goods,Latin America,51.45,662,21,8,4.4,Stockout Risk,0.96,34059.9
+SKU-0453,Titan Manufacturing,Packaging,Latin America,66.69,246,3,13,19.3,Healthy,0.85,16405.74
+SKU-0454,Keystone Materials,Raw Materials,Latin America,5.0,334,14,28,30.6,Overstocked,0.76,1670.0
+SKU-0455,Apex Manufacturing,Finished Goods,Europe,38.53,129,18,21,59.4,Overstocked,0.93,4970.37
+SKU-0456,UnionTech Supply,Packaging,Asia-Pacific,91.2,1630,25,274,61.4,Overstocked,0.75,148656.0
+SKU-0457,CoreTech Supply,Packaging,North America,30.26,170,35,9,19.3,Healthy,0.96,5144.2
+SKU-0458,Heritage Industrial,Packaging,Latin America,17.85,575,23,116,73.6,Overstocked,0.98,10263.75
+SKU-0459,Regional Supply Co,Raw Materials,Latin America,24.3,1034,10,77,27.2,Healthy,0.75,25126.2
+SKU-0460,Keystone Materials,Finished Goods,Europe,51.07,214,10,7,11.9,Healthy,0.63,10928.98
+SKU-0461,LumenTech,Components,North America,20.4,994,11,197,72.3,Overstocked,1.0,20277.6
+SKU-0462,Regional Supply Co,Raw Materials,Europe,36.48,1019,10,46,16.5,Healthy,0.83,37173.12
+SKU-0463,Meridian Parts,Finished Goods,Europe,6.2,164,26,3,6.7,Stockout Risk,0.78,1016.8
+SKU-0464,Heritage Industrial,Raw Materials,Europe,37.26,1146,26,174,55.4,Overstocked,0.96,42699.96
+SKU-0465,Innovate Supply,Components,Europe,26.06,235,10,0,0.0,Stockout Risk,0.83,6124.1
+SKU-0466,UnionTech Supply,Components,North America,32.84,235,21,26,40.4,Overstocked,0.66,7717.4
+SKU-0467,FrontierLogistics,Packaging,Latin America,14.45,838,24,40,17.4,Healthy,0.86,12109.1
+SKU-0468,Titan Manufacturing,Consumables,Latin America,22.77,1288,12,187,53.0,Overstocked,0.9,29327.76
+SKU-0469,Titan Manufacturing,Consumables,Asia-Pacific,19.31,352,24,25,25.9,Healthy,0.85,6797.12
+SKU-0470,LumenTech,Components,Latin America,40.12,1532,27,25,6.0,Stockout Risk,0.99,61463.84
+SKU-0471,CoreTech Supply,Packaging,Latin America,150.25,1122,23,99,32.2,Overstocked,1.0,168580.5
+SKU-0472,Keystone Materials,Finished Goods,North America,12.28,104,15,7,24.6,Healthy,0.59,1277.12
+SKU-0473,Meridian Parts,Consumables,North America,37.54,977,15,67,25.0,Healthy,0.92,36676.58
+SKU-0474,Keystone Materials,Packaging,Latin America,64.79,705,19,58,30.0,Overstocked,0.7,45676.95
+SKU-0475,BlueLine Industrial,Raw Materials,Asia-Pacific,55.23,1542,13,138,32.7,Overstocked,0.82,85164.66
+SKU-0476,Keystone Materials,Raw Materials,North America,29.18,271,39,25,33.7,Overstocked,0.72,7907.78
+SKU-0477,UnionTech Supply,Consumables,Latin America,95.03,947,25,364,140.3,Severely Overstocked,0.63,89993.41
+SKU-0478,Pinnacle Supply,Consumables,North America,429.21,133,17,9,24.7,Healthy,0.95,57084.93
+SKU-0479,Pinnacle Supply,Consumables,Europe,116.22,1945,16,10,1.9,Stockout Risk,0.92,226047.9
+SKU-0480,LumenTech,Consumables,Latin America,17.3,1024,23,231,82.3,Overstocked,0.97,17715.2
+SKU-0481,Regional Supply Co,Components,North America,37.7,180,29,65,131.8,Severely Overstocked,0.81,6786.0
+SKU-0482,Pinnacle Supply,Raw Materials,Asia-Pacific,21.65,1329,19,18,4.9,Stockout Risk,0.95,28772.85
+SKU-0483,CoreTech Supply,Consumables,Europe,16.35,191,19,1,1.9,Stockout Risk,0.86,3122.85
+SKU-0484,BlueLine Industrial,Components,Latin America,12.64,218,31,6,10.0,Healthy,0.86,2755.52
+SKU-0485,Pinnacle Supply,Consumables,Europe,9.3,110,16,4,13.3,Healthy,0.94,1023.0
+SKU-0486,Meridian Parts,Finished Goods,Asia-Pacific,28.0,973,17,39,14.6,Healthy,0.82,27244.0
+SKU-0487,Northstar Industrial,Packaging,Asia-Pacific,35.63,67,17,4,21.8,Healthy,0.83,2387.21
+SKU-0488,UnionTech Supply,Raw Materials,Asia-Pacific,20.45,96,28,6,22.8,Healthy,0.64,1963.2
+SKU-0489,CoreTech Supply,Finished Goods,North America,50.17,232,19,12,18.9,Healthy,0.98,11639.44
+SKU-0490,Standard Industrial,Packaging,Asia-Pacific,103.66,1248,27,218,63.8,Overstocked,0.77,129367.68
+SKU-0491,Innovate Supply,Consumables,Europe,15.2,939,20,66,25.7,Healthy,0.68,14272.8
+SKU-0492,LumenTech,Raw Materials,Europe,5.0,263,31,34,47.2,Overstocked,0.89,1315.0
+SKU-0493,Meridian Parts,Finished Goods,Latin America,95.86,306,18,112,133.6,Severely Overstocked,0.87,29333.16
+SKU-0494,Eastern Components,Consumables,North America,5.73,283,47,30,38.7,Overstocked,0.74,1621.59
+SKU-0495,Keystone Materials,Consumables,Latin America,87.96,125,23,2,5.8,Stockout Risk,0.65,10995.0
+SKU-0496,LumenTech,Components,North America,9.83,627,16,11,6.4,Stockout Risk,0.95,6163.41
+SKU-0497,Omega Components,Consumables,Asia-Pacific,67.89,241,13,14,21.2,Healthy,0.74,16361.49
+SKU-0498,Apex Manufacturing,Finished Goods,Asia-Pacific,32.08,678,11,34,18.3,Healthy,0.9,21750.24
+SKU-0499,FrontierLogistics,Components,Asia-Pacific,8.68,166,26,31,68.2,Overstocked,0.89,1440.88
+SKU-0500,Quality Metals,Components,Europe,6.15,197,18,9,16.7,Healthy,0.8,1211.55

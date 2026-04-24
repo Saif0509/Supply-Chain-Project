@@ -1,0 +1,134 @@
+{
+  "metrics": {
+    "total_skus": 500,
+    "total_vendors": 20,
+    "total_spend": 9973796.05,
+    "overstocked_pct": 44.800000000000004,
+    "overstocked_value": 912390.0,
+    "stockout_skus": 50,
+    "stockout_value": 1245139.9399999997,
+    "avg_otd": 85.228,
+    "avg_lead_time": 20.822
+  },
+  "stock_distribution": {
+    "Healthy": 226,
+    "Overstocked": 172,
+    "Severely Overstocked": 52,
+    "Stockout Risk": 50
+  },
+  "top_vendors_spend": [
+    {
+      "Vendor": "Pinnacle Supply",
+      "Total_Spend": 884062.49,
+      "Avg_OTD": 0.9564705882352942
+    },
+    {
+      "Vendor": "LumenTech",
+      "Total_Spend": 827087.04,
+      "Avg_OTD": 0.9438709677419356
+    },
+    {
+      "Vendor": "CoreTech Supply",
+      "Total_Spend": 824747.41,
+      "Avg_OTD": 0.9310526315789476
+    },
+    {
+      "Vendor": "UnionTech Supply",
+      "Total_Spend": 714170.91,
+      "Avg_OTD": 0.6779999999999999
+    },
+    {
+      "Vendor": "Standard Industrial",
+      "Total_Spend": 578496.9,
+      "Avg_OTD": 0.8925000000000001
+    },
+    {
+      "Vendor": "Northstar Industrial",
+      "Total_Spend": 572913.5,
+      "Avg_OTD": 0.8716666666666666
+    },
+    {
+      "Vendor": "Heritage Industrial",
+      "Total_Spend": 564647.61,
+      "Avg_OTD": 0.9134615384615384
+    },
+    {
+      "Vendor": "Meridian Parts",
+      "Total_Spend": 530700.17,
+      "Avg_OTD": 0.8699999999999999
+    },
+    {
+      "Vendor": "Regional Supply Co",
+      "Total_Spend": 515514.18000000005,
+      "Avg_OTD": 0.78875
+    },
+    {
+      "Vendor": "Innovate Supply",
+      "Total_Spend": 470233.91,
+      "Avg_OTD": 0.8433333333333333
+    }
+  ],
+  "worst_vendors": [
+    {
+      "Vendor": "UnionTech Supply",
+      "Avg_OTD": 0.6779999999999999,
+      "Total_Spend": 714170.91
+    },
+    {
+      "Vendor": "Keystone Materials",
+      "Avg_OTD": 0.6937931034482759,
+      "Total_Spend": 342472.87
+    },
+    {
+      "Vendor": "Omega Components",
+      "Avg_OTD": 0.7308,
+      "Total_Spend": 246615.21
+    },
+    {
+      "Vendor": "Global Metals Ltd",
+      "Avg_OTD": 0.765,
+      "Total_Spend": 422595.04
+    },
+    {
+      "Vendor": "Regional Supply Co",
+      "Avg_OTD": 0.78875,
+      "Total_Spend": 515514.18000000005
+    }
+  ],
+  "category_spend": [
+    {
+      "Category": "Components",
+      "Total_Spend": 2304977.54
+    },
+    {
+      "Category": "Consumables",
+      "Total_Spend": 1774032.54
+    },
+    {
+      "Category": "Finished Goods",
+      "Total_Spend": 1725537.56
+    },
+    {
+      "Category": "Packaging",
+      "Total_Spend": 2841805.2
+    },
+    {
+      "Category": "Raw Materials",
+      "Total_Spend": 1327443.21
+    }
+  ],
+  "region_spend": {
+    "Asia-Pacific": 2879309.88,
+    "Europe": 2682157.09,
+    "Latin America": 2823294.17,
+    "North America": 1589034.91
+  },
+  "lead_time_distribution": {
+    "1-7 days": 36,
+    "8-14 days": 99,
+    "15-21 days": 139,
+    "22-30 days": 152,
+    "31-45 days": 72,
+    "46+ days": 2
+  }
+}
